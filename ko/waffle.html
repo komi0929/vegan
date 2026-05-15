@@ -30,10 +30,10 @@
 <a href="./index.html"><img src="../img/logo_header.png" alt="Soy stories"></a>
 </h1>
 <div class="header__nav-sp">
-<a href="https://soystories.com/" class="header__button-sp" target="_new">オンラインストアはこちら</a>
+<a href="https://soystories.com/" class="header__button-sp" target="_new">온라인 스토어</a>
 
 
-<div style="margin-top:12px; display:flex; justify-content:center; gap:16px; font-family:sans-serif; font-size:14px; padding-bottom:12px;">
+<div class="custom-sp-lang-block" style="margin-top:12px; display:flex; justify-content:center; gap:16px; font-family:sans-serif; font-size:14px; padding-bottom:12px;">
     <a href="../index.html" style="color:#999;">JP</a>
     <a href="../en/index.html" style="color:#999;">EN</a>
     <a href="../ko/index.html" style="color:#7C8A53; font-weight:bold;">KO</a>
@@ -44,7 +44,15 @@
 </div>
 <nav class="header__nav">
 
-<div style="display:flex; align-items:center; margin-left:16px; margin-right:16px; gap:8px; font-family:sans-serif; font-size:12px;">
+<style>
+@media(min-width:768px) {
+    .custom-sp-lang-block { display: none !important; }
+}
+@media(max-width:767px) {
+    .custom-pc-lang-block { display: none !important; }
+}
+</style>
+<div class="custom-pc-lang-block" style="display:flex; align-items:center; margin-left:16px; margin-right:16px; gap:8px; font-family:sans-serif; font-size:12px;">
     <a href="../index.html" style="color:#999; transition:color 0.3s;">JP</a><span style="color:#ccc;">|</span>
     <a href="../en/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">EN</a><span style="color:#ccc;">|</span>
     <a href="../ko/index.html" style="color:#7C8A53; font-weight:bold;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">KO</a><span style="color:#ccc;">|</span>
@@ -52,7 +60,7 @@
     <a href="../zh-cn/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">簡</a>
 </div>
 
-<a href="https://soystories.com/" class="header__button" target="_new">オンラインストアはこちら</a>
+<a href="https://soystories.com/" class="header__button" target="_new">온라인 스토어</a>
 </nav>
 </div>
 <!-- Menu -->

@@ -14,7 +14,15 @@ root_dir = r"c:\Users\soyst\OneDrive\デスクトップ\vegan"
 
 # Multilingual link blocks to inject
 pc_lang_block = """
-<div style="display:flex; align-items:center; margin-left:16px; margin-right:16px; gap:8px; font-family:sans-serif; font-size:12px;">
+<style>
+@media(min-width:768px) {
+    .custom-sp-lang-block { display: none !important; }
+}
+@media(max-width:767px) {
+    .custom-pc-lang-block { display: none !important; }
+}
+</style>
+<div class="custom-pc-lang-block" style="display:flex; align-items:center; margin-left:16px; margin-right:16px; gap:8px; font-family:sans-serif; font-size:12px;">
     <a href="LANG_LINK_JP" style="JP_STYLE">JP</a><span style="color:#ccc;">|</span>
     <a href="LANG_LINK_EN" style="EN_STYLE" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">EN</a><span style="color:#ccc;">|</span>
     <a href="LANG_LINK_KO" style="KO_STYLE" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">KO</a><span style="color:#ccc;">|</span>
@@ -24,7 +32,7 @@ pc_lang_block = """
 """
 
 sp_lang_block = """
-<div style="margin-top:12px; display:flex; justify-content:center; gap:16px; font-family:sans-serif; font-size:14px; padding-bottom:12px;">
+<div class="custom-sp-lang-block" style="margin-top:12px; display:flex; justify-content:center; gap:16px; font-family:sans-serif; font-size:14px; padding-bottom:12px;">
     <a href="LANG_LINK_JP" style="JP_STYLE">JP</a>
     <a href="LANG_LINK_EN" style="EN_STYLE">EN</a>
     <a href="LANG_LINK_KO" style="KO_STYLE">KO</a>
@@ -104,6 +112,16 @@ for filename, url in urls.items():
             lang_html = lang_html.replace('href="./favicon.ico"', 'href="../favicon.ico"')
             # The top logo goes to the language's top page, which is index.html in the same subfolder
             lang_html = lang_html.replace('href="./index.html"', 'href="./index.html"')
+            
+            # Translate online store button
+            if lang == 'en':
+                lang_html = lang_html.replace('オンラインストアはこちら', 'Online Store')
+            elif lang == 'ko':
+                lang_html = lang_html.replace('オンラインストアはこちら', '온라인 스토어')
+            elif lang == 'zh-cn':
+                lang_html = lang_html.replace('オンラインストアはこちら', '在线商店')
+            elif lang == 'zh-tw':
+                lang_html = lang_html.replace('オンラインストアはこちら', '線上商店')
             
         for l_key, l_val in [('JP', '.'), ('EN', 'en'), ('KO', 'ko'), ('ZH_TW', 'zh-tw'), ('ZH_CN', 'zh-cn')]:
             if l_val == lang:
