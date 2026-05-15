@@ -3,79 +3,87 @@
 <head prefix="og: https://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>縲仙・蠑上全oyStories | 繧ｰ繝ｫ繝・Φ繝輔Μ繝ｼ・・・繝ｩ繝ｳ繝医・繝ｼ繧ｹ繧ｹ繧､繝ｼ繝・/title>
+    <title>【公式】SoyStories | グルテンフリー＆プラントベーススイーツ</title>
+    <meta name="description" content="福岡市中央区薬院にあるグルテンフリー、プラントベース、アレルギー対応のスイーツ店です。小麦、乳、卵、白砂糖を使用しないスイーツの販売を行っています。イートイン、テイクアウトともに可能です。">
     <meta name="robots" content="noindex, nofollow">
-    <!-- 繧ｫ繝弱ル繧ｫ繝ｫ -->
+    <!-- カノニカル -->
     <link rel="canonical" href="">
-    <!-- OGP -->
+    <!-- ogp -->
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="SoyStories">
-    <meta property="og:description" content="遖丞ｲ｡蟶ゆｸｭ螟ｮ蛹ｺ阮ｬ髯｢縺ｫ縺ゅｋ繧ｰ繝ｫ繝・Φ繝輔Μ繝ｼ縲√・繝ｩ繝ｳ繝医・繝ｼ繧ｹ縲√い繝ｬ繝ｫ繧ｮ繝ｼ蟇ｾ蠢懊・繧ｹ繧､繝ｼ繝・ｺ励〒縺吶ょｰ城ｺｦ縲∽ｹｳ縲∝嵯縲∫區遐らｳ悶ｒ菴ｿ逕ｨ縺励↑縺・せ繧､繝ｼ繝・・雋ｩ螢ｲ繧定｡後▲縺ｦ縺・∪縺吶ゅう繝ｼ繝医う繝ｳ縲√ユ繧､繧ｯ繧｢繧ｦ繝医→繧ゅ↓蜿ｯ閭ｽ縺ｧ縺吶・>
+    <meta property="og:description" content="福岡市中央区薬院にあるグルテンフリー、プラントベース、アレルギー対応のスイーツ店です。小麦、乳、卵、白砂糖を使用しないスイーツの販売を行っています。イートイン、テイクアウトともに可能です。">
     <meta property="og:image" content="">
-    <!-- GoogleFonts -->
+    <!-- ファビコン -->
+    <link rel="icon" type="img/png" href="./img/favicon.ico">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
-    <!-- 繝輔ぃ繝薙さ繝ｳ -->
-    <link rel="icon" type="img/png" href="./img/favicon.ico">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress@5.0.2/dist/ress.min.css">
+    <!-- css -->
+     <link rel="stylesheet" href="./css/lib/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- AIO Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "SoyStories",
+      "image": "https://vegan.jp/img/fv_logo.png",
+      "servesCuisine": "Vegan, Gluten-Free, Plant-Based Sweets",
+      "address": { "@type": "PostalAddress", "streetAddress": "薬院2丁目2-24", "addressLocality": "福岡市中央区", "addressRegion": "福岡県", "postalCode": "810-0022", "addressCountry": "JP" }
+    }
+    </script>
+    <link rel="stylesheet" href="./css/detail.css">
 </head> 
 <body>
     <header class="header">
         <div class="header__inner inner">
             <h1 class="header__logo">
-                <a href="./index.html"><img src="./img/logo_header.png" alt="Soy stories"></a>
+                <a href="/"><img src="./img/logo_header.png" alt="Soy stories"></a>
             </h1>
             <div class="header__nav-sp">
-                <a href="https://soystories.com/" class="header__button-sp" target="_blank">繧ｪ繝ｳ繝ｩ繧､繝ｳ繧ｹ繝医い縺ｯ縺薙■繧・/a>
+                <a href="https://soystories.com/" class="header__button-sp" target="_blank">オンラインストアはこちら</a>
+                <button id="js-drawer-icon" class="header__open drawer-icon">
+                    <span class="drawer-icon__bar"></span>
+                    <span class="drawer-icon__bar"></span>
+                    <span class="drawer-icon__bar"></span>
+                </button>
             </div>
             <nav class="header__nav">
-                <a href="https://soystories.com/" class="header__button" target="_blank">繧ｪ繝ｳ繝ｩ繧､繝ｳ繧ｹ繝医い縺ｯ縺薙■繧・/a>
+                <a href="#concept" class="header__link">Concept</a>
+                <a href="#menu" class="header__link">Menu</a>
+                <a href="#commitment" class="header__link">当店のこだわり</a>
+                <a href="#qa" class="header__link">Q&A</a>
+                <a href="#access" class="header__link">Access</a>
+                <div style="display:flex; align-items:center; margin-left:16px; margin-right:16px; gap:8px; font-family:sans-serif; font-size:12px;">
+                    <a href="index.html" style="color:#7C8A53; font-weight:bold;">JP</a><span style="color:#ccc;">|</span>
+                    <a href="en/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">EN</a><span style="color:#ccc;">|</span>
+                    <a href="ko/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">KO</a><span style="color:#ccc;">|</span>
+                    <a href="zh-tw/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">繁</a><span style="color:#ccc;">|</span>
+                    <a href="zh-cn/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">簡</a>
+                </div>
+                <a href="https://soystories.com/" class="header__button" target="_blank">オンラインストアはこちら</a>
             </nav>
         </div>
-        <!-- Menu -->
-        <nav class="menu-nav">
-            <div class="nav-1">
-                <a href="#" class="menu-nav-link">
-                    <div class="one-nav" id="waffle-soft">
-                        <div class="kind-jp">
-                            <div id="kind-jp-waffle-top">繝ｯ繝・ヵ繝ｫ</div>繧ｽ繝輔ヨ繧ｯ繝ｪ繝ｼ繝
-                        </div>
-                        <div class="kind-en">Waffle&softcream</div>
-                    </div>
-                </a>
-                <a href="./soft.html" class="menu-nav-link">
-                    <div class="one-nav" id="softcream">
-                        <div class="kind-jp" id="jp-softcream">繧ｽ繝輔ヨ繧ｯ繝ｪ繝ｼ繝</div>
-                        <div class="kind-en">Softcream</div>
-                    </div>
-                </a>
-            </div>
-            <div class="nav-2">
-                <a href="./waffle.html" class="menu-nav-link">
-                    <div class="two-nav" id="waffles">
-                        <div class="kind-jp">繝ｯ繝・ヵ繝ｫ</div>
-                        <div class="kind-en">Waffle</div>
-                    </div>
-                </a>
-                <a href="./dounuts.html" class="menu-nav-link">
-                    <div class="two-nav" id="donut">
-                        <div class="kind-jp">繝峨・繝翫ヤ</div>
-                        <div class="kind-en">Donut</div>
-                    </div>
-                </a>
-                <a href="./ice.html" class="menu-nav-link">
-                    <div class="two-nav" id="icecream">
-                        <div class="kind-jp">邀ｳ邊峨ず繧ｧ繝ｩ繝ｼ繝・/div>
-                        <div class="kind-en">Rice flour gelato</div>
-                    </div>
-                </a>
-            </div>
-        </nav>
+        <div id="js-drawer-content" class="drawer-content">
+            <nav class="drawer-content__menu">
+                <a href="#concept" class="drawer-content__link">Concept</a>
+                <a href="#menu" class="drawer-content__link">Menu</a>
+                <a href="#commitment" class="drawer-content__link">当店のこだわり</a>
+                <a href="#qa" class="drawer-content__link">Q&A</a>
+                <a href="#access" class="drawer-content__link">Access</a>
+                <a href="https://soystories.com/" class="drawer-content__button" target="_blank">オンラインストアはこちら</a>
+                <div style="margin-top:24px; display:flex; justify-content:center; gap:16px; font-family:sans-serif; font-size:14px; padding-bottom:24px;">
+                    <a href="index.html" style="color:#7C8A53; font-weight:bold;">JP</a>
+                    <a href="en/index.html" style="color:#999;">EN</a>
+                    <a href="ko/index.html" style="color:#999;">KO</a>
+                    <a href="zh-tw/index.html" style="color:#999;">繁</a>
+                    <a href="zh-cn/index.html" style="color:#999;">簡</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <!-- MENU繧ｿ繧､繝医Ν -->
     <div class="title"><h2 class="inner"><span>Waffle&softcream</span><span id="title-sub">繝ｯ繝・ヵ繝ｫ繧ｽ繝輔ヨ</span></h2></div>
@@ -83,7 +91,7 @@
     <main class="ws">
         <div class="wsbox">
             <div class="imgflex">
-                <img src="./img/wafflesoft.png" alt="螟ｧ縺阪＞繧ｵ繧､繧ｺ縺ｮ繝ｯ繝・ヵ繝ｫ繧ｽ繝輔ヨ縲ゅ″縺､縺ｭ濶ｲ縺ｫ辟ｼ縺九ｌ縺溘ヰ繝悶Ν繝ｯ繝・ヵ繝ｫ縺瑚ｻｽ縺丈ｸｸ繧√ｉ繧後※縺翫ｊ縲√◎縺ｮ髢薙↓逋ｽ縺・た繝輔ヨ繧ｯ繝ｪ繝ｼ繝縺碁ｫ倥￥蟾ｻ縺九ｌ縺ｦ縺・ｋ縲・>
+                <img src="./img/wafflesoft.png" alt="">
                 <img src="./img/wafflesoft_half.png" alt="譎ｮ騾壹し繧､繧ｺ縺ｮ繝ｯ繝・ヵ繝ｫ繧ｽ繝輔ヨ縲ょ､ｧ縺阪＞繧ｵ繧､繧ｺ縺ｮ繝ｯ繝・ヵ繝ｫ繧ｽ繝輔ヨ縲ゅ″縺､縺ｭ濶ｲ縺ｫ辟ｼ縺九ｌ縺溘ヰ繝悶Ν繝ｯ繝・ヵ繝ｫ縺瑚ｻｽ縺丈ｸｸ繧√ｉ繧後※縺翫ｊ縲√◎縺ｮ髢薙↓逋ｽ縺・た繝輔ヨ繧ｯ繝ｪ繝ｼ繝縺悟ｷｻ縺九ｌ縺ｦ縺・ｋ縲・ class="half">
             </div>
             <div class="nameflex">
@@ -93,7 +101,7 @@
                 </div>
                 <div class="areflexmobile">
                     <p>allergen</p>
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺吶・>
+                    <img src="./img/soy-are.png" alt="">
                 </div>
             </div>
             <div class="textflex">
@@ -103,14 +111,14 @@
                 </div>
                 <div class="areflexpc">
                     <p>allergen</p>
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺吶・>
+                    <img src="./img/soy-are.png" alt="">
                 </div>
             </div>
             <p class="money">繝輔Ν&emsp;900蜀・ensp;/&ensp;繝上・繝・emsp;600蜀・emsp;・育ｨ手ｾｼ・・/p>
         </div>
         <div class="wsbox">
             <div class="imgflex">
-                <img src="./img/wafflewhip.png" alt="螟ｧ縺阪＞繧ｵ繧､繧ｺ縺ｮ繝ｯ繝・ヵ繝ｫ繝帙う繝・・縲ゅ″縺､縺ｭ濶ｲ縺ｫ辟ｼ縺九ｌ縲√メ繝ｧ繧ｳ繧ｽ繝ｼ繧ｹ縺ｨ邊臥ｳ悶′縺ｾ縺ｶ縺輔ｌ縺溘ヰ繝悶Ν繝ｯ繝・ヵ繝ｫ縺瑚ｻｽ縺丈ｸｸ繧√ｉ繧後※縺・ｋ縲ゅ◎縺ｮ髢薙↓逋ｽ縺・・繧､繝・・繧ｯ繝ｪ繝ｼ繝縺後い繧､繧ｹ繧ｯ繝ｪ繝ｼ繝縺ｮ繧医≧縺ｫ荳ｸ繧√ｉ繧後※繝医ャ繝斐Φ繧ｰ縺輔ｌ縺ｦ縺・ｋ縲・>
+                <img src="./img/wafflewhip.png" alt="">
                 <img src="./img/wafflewhip_half.png" alt="譎ｮ騾壹し繧､繧ｺ縺ｮ繝ｯ繝・ヵ繝ｫ繝帙う繝・・縲ゅ″縺､縺ｭ濶ｲ縺ｫ辟ｼ縺九ｌ縲√メ繝ｧ繧ｳ繧ｽ繝ｼ繧ｹ縺ｨ邊臥ｳ悶′縺ｾ縺ｶ縺輔ｌ縺溘ヰ繝悶Ν繝ｯ繝・ヵ繝ｫ縺瑚ｻｽ縺丈ｸｸ繧√ｉ繧後※縺・ｋ縲ゅ◎縺ｮ髢薙↓逋ｽ縺・・繧､繝・・繧ｯ繝ｪ繝ｼ繝縺後い繧､繧ｹ繧ｯ繝ｪ繝ｼ繝縺ｮ繧医≧縺ｫ荳ｸ繧√ｉ繧後※繝医ャ繝斐Φ繧ｰ縺輔ｌ縺ｦ縺・ｋ縲・ class="half">
             </div>
             <div class="nameflex">
@@ -120,7 +128,7 @@
                 </div>
                 <div class="areflexmobile">
                     <p>allergen</p>
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺吶・>
+                    <img src="./img/soy-are.png" alt="">
                 </div>
             </div>
             <div class="textflex">
@@ -130,7 +138,7 @@
                 </div>
                 <div class="areflexpc">
                     <p>allergen</p>
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺吶・>
+                    <img src="./img/soy-are.png" alt="">
                 </div>
             </div>
             <p class="money">繝輔Ν&emsp;900蜀・ensp;/&ensp;繝上・繝・emsp;600蜀・emsp;・育ｨ手ｾｼ・・/p>
@@ -140,17 +148,17 @@
         <div class="toppflex">
             <p class="topptext">謚ｹ闌ｶ</p>
             <p class="toppen">Green tea</p>
-            <img src="./img/greentea.png" alt="謚ｹ闌ｶ繝代え繝繝ｼ縺ｮ蜈･縺｣縺溽童縺ｮ謇区嶌縺埼｢ｨ繧､繝ｩ繧ｹ繝・>
+            <img src="./img/greentea.png" alt="">
         </div>
         <div class="toppflex">
             <p class="topptext">縺阪↑邊・/p>
             <p class="toppen">Soy powder</p>
-            <img src="./img/soypowder.png" alt="縺阪↑邊峨ヱ繧ｦ繝繝ｼ縺ｮ蜈･縺｣縺溽童縺ｮ謇区嶌縺埼｢ｨ繧､繝ｩ繧ｹ繝・>
+            <img src="./img/soypowder.png" alt="">
         </div>
         <div class="toppflex">
             <p class="topptext">縺ｻ縺・§闌ｶ</p>
             <p class="toppen">Houji cha</p>
-            <img src="./img/houjicha.png" alt="縺ｻ縺・§闌ｶ繝代え繝繝ｼ縺ｮ蜈･縺｣縺溽童縺ｮ謇区嶌縺埼｢ｨ繧､繝ｩ繧ｹ繝・>
+            <img src="./img/houjicha.png" alt="">
         </div>
         <div class="toppflex">
             <div class=" okara">
@@ -164,12 +172,12 @@
         <div class="toppflex">
             <p class="topptext">繝√Ι繧ｳ繧ｽ繝ｼ繧ｹ</p>
             <p class="toppen">Chocolate source</p>
-            <img src="./img/chocosource.png" alt="繝√Ι繧ｳ繧ｽ繝ｼ繧ｹ繧呈汐縺｣縺ｦ縺・ｋ繧ｹ繝励・繝ｳ縺ｮ謇区嶌縺埼｢ｨ繧､繝ｩ繧ｹ繝医・>
+            <img src="./img/chocosource.png" alt="">
         </div>
         <div class="toppflex">
             <p class="topptext">鮟定惧</p>
             <p class="toppen">Kutomistu</p>
-            <img src="./img/kuromitsu.png" alt="鮟定惧繧呈汐縺｣縺ｦ縺・ｋ繧ｹ繝励・繝ｳ縺ｮ謇区嶌縺埼｢ｨ繧､繝ｩ繧ｹ繝・>
+            <img src="./img/kuromitsu.png" alt="">
         </div>
     </div>
     <section class="aa">
@@ -187,5 +195,8 @@
     <div class="copylight">
         <small>&copy; 2024 SoyStories</small>
     </div>
+    <!-- JS -->
+    <script src="./js/lib/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

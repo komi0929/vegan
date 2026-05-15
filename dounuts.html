@@ -3,79 +3,87 @@
 <head prefix="og: https://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>縲仙・蠑上全oyStories | 繧ｰ繝ｫ繝・Φ繝輔Μ繝ｼ・・・繝ｩ繝ｳ繝医・繝ｼ繧ｹ繧ｹ繧､繝ｼ繝・/title>
+    <title>【公式】SoyStories | グルテンフリー＆プラントベーススイーツ</title>
+    <meta name="description" content="福岡市中央区薬院にあるグルテンフリー、プラントベース、アレルギー対応のスイーツ店です。小麦、乳、卵、白砂糖を使用しないスイーツの販売を行っています。イートイン、テイクアウトともに可能です。">
     <meta name="robots" content="noindex, nofollow">
-    <!-- 繧ｫ繝弱ル繧ｫ繝ｫ -->
+    <!-- カノニカル -->
     <link rel="canonical" href="">
-    <!-- OGP -->
+    <!-- ogp -->
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="SoyStories">
-    <meta property="og:description" content="遖丞ｲ｡蟶ゆｸｭ螟ｮ蛹ｺ阮ｬ髯｢縺ｫ縺ゅｋ繧ｰ繝ｫ繝・Φ繝輔Μ繝ｼ縲√・繝ｩ繝ｳ繝医・繝ｼ繧ｹ縲√い繝ｬ繝ｫ繧ｮ繝ｼ蟇ｾ蠢懊・繧ｹ繧､繝ｼ繝・ｺ励〒縺吶ょｰ城ｺｦ縲∽ｹｳ縲∝嵯縲∫區遐らｳ悶ｒ菴ｿ逕ｨ縺励↑縺・せ繧､繝ｼ繝・・雋ｩ螢ｲ繧定｡後▲縺ｦ縺・∪縺吶ゅう繝ｼ繝医う繝ｳ縲√ユ繧､繧ｯ繧｢繧ｦ繝医→繧ゅ↓蜿ｯ閭ｽ縺ｧ縺吶・>
+    <meta property="og:description" content="福岡市中央区薬院にあるグルテンフリー、プラントベース、アレルギー対応のスイーツ店です。小麦、乳、卵、白砂糖を使用しないスイーツの販売を行っています。イートイン、テイクアウトともに可能です。">
     <meta property="og:image" content="">
-    <!-- GoogleFonts -->
+    <!-- ファビコン -->
+    <link rel="icon" type="img/png" href="./img/favicon.ico">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
-    <!-- 繝輔ぃ繝薙さ繝ｳ -->
-    <link rel="icon" type="img/png" href="./img/favicon.ico">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress@5.0.2/dist/ress.min.css">
+    <!-- css -->
+     <link rel="stylesheet" href="./css/lib/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- AIO Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "SoyStories",
+      "image": "https://vegan.jp/img/fv_logo.png",
+      "servesCuisine": "Vegan, Gluten-Free, Plant-Based Sweets",
+      "address": { "@type": "PostalAddress", "streetAddress": "薬院2丁目2-24", "addressLocality": "福岡市中央区", "addressRegion": "福岡県", "postalCode": "810-0022", "addressCountry": "JP" }
+    }
+    </script>
+    <link rel="stylesheet" href="./css/detail.css">
 </head> 
 <body>
     <header class="header">
         <div class="header__inner inner">
             <h1 class="header__logo">
-                <a href="./index.html"><img src="./img/logo_header.png" alt="SoyStories"></a>
+                <a href="/"><img src="./img/logo_header.png" alt="Soy stories"></a>
             </h1>
             <div class="header__nav-sp">
-                <a href="https://soystories.com/" class="header__button-sp" target="_blank">繧ｪ繝ｳ繝ｩ繧､繝ｳ繧ｹ繝医い縺ｯ縺薙■繧・/a>
+                <a href="https://soystories.com/" class="header__button-sp" target="_blank">オンラインストアはこちら</a>
+                <button id="js-drawer-icon" class="header__open drawer-icon">
+                    <span class="drawer-icon__bar"></span>
+                    <span class="drawer-icon__bar"></span>
+                    <span class="drawer-icon__bar"></span>
+                </button>
             </div>
             <nav class="header__nav">
-                <a href="https://soystories.com/" class="header__button" target="_blank">繧ｪ繝ｳ繝ｩ繧､繝ｳ繧ｹ繝医い縺ｯ縺薙■繧・/a>
+                <a href="#concept" class="header__link">Concept</a>
+                <a href="#menu" class="header__link">Menu</a>
+                <a href="#commitment" class="header__link">当店のこだわり</a>
+                <a href="#qa" class="header__link">Q&A</a>
+                <a href="#access" class="header__link">Access</a>
+                <div style="display:flex; align-items:center; margin-left:16px; margin-right:16px; gap:8px; font-family:sans-serif; font-size:12px;">
+                    <a href="index.html" style="color:#7C8A53; font-weight:bold;">JP</a><span style="color:#ccc;">|</span>
+                    <a href="en/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">EN</a><span style="color:#ccc;">|</span>
+                    <a href="ko/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">KO</a><span style="color:#ccc;">|</span>
+                    <a href="zh-tw/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">繁</a><span style="color:#ccc;">|</span>
+                    <a href="zh-cn/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">簡</a>
+                </div>
+                <a href="https://soystories.com/" class="header__button" target="_blank">オンラインストアはこちら</a>
             </nav>
         </div>
-        <!-- Menu -->
-        <nav class="menu-nav">
-            <div class="nav-1">
-                <a href="./waffle&soft.html" class="menu-nav-link">
-                    <div class="one-nav" id="waffle-soft">
-                        <div class="kind-jp">
-                            <div id="kind-jp-waffle-top">繝ｯ繝・ヵ繝ｫ</div>繧ｽ繝輔ヨ繧ｯ繝ｪ繝ｼ繝
-                        </div>
-                        <div class="kind-en">Waffle&softcream</div>
-                    </div>
-                </a>
-                <a href="./soft.html" class="menu-nav-link">
-                    <div class="one-nav" id="softcream">
-                        <div class="kind-jp" id="jp-softcream">繧ｽ繝輔ヨ繧ｯ繝ｪ繝ｼ繝</div>
-                        <div class="kind-en">Softcream</div>
-                    </div>
-                </a>
-            </div>
-            <div class="nav-2">
-                <a href="./waffle.html" class="menu-nav-link">
-                    <div class="two-nav" id="waffles">
-                        <div class="kind-jp">繝ｯ繝・ヵ繝ｫ</div>
-                        <div class="kind-en">Waffle</div>
-                    </div>
-                </a>
-                <a href="#" class="menu-nav-link">
-                    <div class="two-nav" id="donut">
-                        <div class="kind-jp">繝峨・繝翫ヤ</div>
-                        <div class="kind-en">Donut</div>
-                    </div>
-                </a>
-                <a href="./ice.html" class="menu-nav-link">
-                    <div class="two-nav" id="icecream">
-                        <div class="kind-jp">邀ｳ邊峨ず繧ｧ繝ｩ繝ｼ繝・/div>
-                        <div class="kind-en">Rice flour gelato</div>
-                    </div>
-                </a>
-            </div>
-        </nav>
+        <div id="js-drawer-content" class="drawer-content">
+            <nav class="drawer-content__menu">
+                <a href="#concept" class="drawer-content__link">Concept</a>
+                <a href="#menu" class="drawer-content__link">Menu</a>
+                <a href="#commitment" class="drawer-content__link">当店のこだわり</a>
+                <a href="#qa" class="drawer-content__link">Q&A</a>
+                <a href="#access" class="drawer-content__link">Access</a>
+                <a href="https://soystories.com/" class="drawer-content__button" target="_blank">オンラインストアはこちら</a>
+                <div style="margin-top:24px; display:flex; justify-content:center; gap:16px; font-family:sans-serif; font-size:14px; padding-bottom:24px;">
+                    <a href="index.html" style="color:#7C8A53; font-weight:bold;">JP</a>
+                    <a href="en/index.html" style="color:#999;">EN</a>
+                    <a href="ko/index.html" style="color:#999;">KO</a>
+                    <a href="zh-tw/index.html" style="color:#999;">繁</a>
+                    <a href="zh-cn/index.html" style="color:#999;">簡</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <!-- MENU繧ｿ繧､繝医Ν -->
     <div class="title"><h2 class="inner"><span>Donut</span><span id="title-sub">繝峨・繝翫ヤ</span></h2></div>
@@ -84,19 +92,19 @@
         <h3>蜷ｫ縺ｾ繧後※縺・ｋ繧｢繝ｬ繝ｫ繧ｮ繝ｼ鬟溷刀</h3>
         <div class="areflex">
             <div class="food">
-                <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
+                <img src="./img/soy-are.png" alt="">
                 <p>螟ｧ雎・/p>
             </div>
             <div class="food">
-                <img src="./img/almond.png" alt="繧｢繝ｼ繝｢繝ｳ繝峨ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
+                <img src="./img/almond.png" alt="">
                 <p>繧｢繝ｼ繝｢繝ｳ繝・/p>
             </div>
             <div class="food">
-                <img src="./img/black_sesame.png" alt="鮟偵＃縺ｾ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                <img src="./img/black_sesame.png" alt="">
                 <p>鮟偵＃縺ｾ</p>
             </div>
             <div class="food">
-                <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                <img src="./img/potato.png" alt="">
                 <p>繧・∪縺・ｂ</p>
             </div>
         </div>
@@ -113,8 +121,8 @@
                 </div>
                 <p class="ex">繝励Ξ繝ｼ繝ｳ繝輔Ξ繧､繝舌・縺ｮ<br class="phonebr">繝峨・繝翫ヤ縺ｫ<br class="pcbr">逕倬・縺｣縺ｱ縺・br class="phonebr">繧ｯ繝ｩ繝ｳ繝吶Μ繝ｼ繧偵ヨ繝・ヴ繝ｳ繧ｰ</p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt="">
+                    <img src="./img/potato.png" alt="">
                 </div>
             </div>
             <div class="donutsbox">
@@ -125,9 +133,9 @@
                 </div>
                 <p class="ex">蝗ｽ逕｣鮟偵＃縺ｾ繧抵ｼ托ｼ撰ｼ撰ｼ・br class="phonebr">菴ｿ逕ｨ縺励◆縲・br class="pcbr">繝励メ繝励メ縺ｨ縺励◆<br class="phonebr">鬟滓─縺梧･ｽ縺励＞蜥後ラ繝ｼ繝翫ヤ</p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/black_sesame.png" alt="鮟偵＃縺ｾ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt="">
+                    <img src="./img/potato.png" alt="">
+                    <img src="./img/black_sesame.png" alt="">
                 </div>
             </div>
             <div class="donutsbox">
@@ -138,8 +146,8 @@
                 </div>
                 <p class="ex">鬥吝袖雎翫°縺ｪ遏ｳ閾ｼ蠑輔″縺ｮ謚ｹ闌ｶ繧・br class="phonebr">菴ｿ逕ｨ縺励◆縲・br class="pcbr">鬥呎侭縲∫捩濶ｲ譁吩ｸ堺ｽｿ逕ｨ縺ｮ<br class="phonebr">譛ｬ譬ｼ豢ｾ謚ｹ闌ｶ繧ｹ繧､繝ｼ繝・/p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt="">
+                    <img src="./img/potato.png" alt="">
                 </div>
             </div>
             <div class="donutsbox">
@@ -150,8 +158,8 @@
                 </div>
                 <p class="ex">繧ゅ■繧ゅ■繝峨・繝翫ヤ縺ｫ縺阪↑縺薙ｒ<br class="phonebr">縺溘▲縺ｷ繧翫°縺代◆縲・br class="pcbr">縺雁ｭ先ｧ倥・br class="phonebr">螂ｳ諤ｧ縺ｫ螟ｧ莠ｺ豌励・蜥後ラ繝ｼ繝翫ヤ</p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt="">
+                    <img src="./img/potato.png" alt="">
                 </div>
             </div>
             <div class="donutsbox">
@@ -162,8 +170,8 @@
                 </div>
                 <p class="ex">繝吶Ν繧ｬ繝｢繝・ヨ縺碁ｦ吶ｋ<br class="phonebr">繧｢繝ｼ繝ｫ繧ｰ繝ｬ繧､縺ｮ邏・幻繧・br class="phonebr">邱ｴ繧願ｾｼ繧薙□縲∝､ｧ莠ｺ縺ｮ繝峨・繝翫ャ繝・/p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt="">
+                    <img src="./img/potato.png" alt="">
                 </div>
             </div>
             <div class="donutsbox">
@@ -174,8 +182,8 @@
                 </div>
                 <p class="ex">蟄蝉ｾ帙°繧牙､ｧ莠ｺ縺ｾ縺ｧ<br class="phonebr">蟷・ｺ・￥諢帙＆繧後ｋ縲・br class="pcbr">繝薙ち繝ｼ縺ｪ<br class="phonebr">逕倥＆縺ｮ繝√Ι繧ｳ繝ｬ繝ｼ繝医ラ繝ｼ繝翫ヤ</p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt="">
+                    <img src="./img/potato.png" alt="">
                 </div>
             </div>
         </div>
@@ -190,8 +198,8 @@
                 </div>
                 <p class="ex">貂ｩ繧√ｋ縺ｨ縺ゅ∪縺翫≧縺ｮ鬥吶ｊ縺・br class="phonebr">縺・▲縺ｱ縺・ｺ・′繧・br>莠ｺ豌励リ繝ｳ繝舌・繝ｯ繝ｳ繝峨・繝翫ヤ</p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・> 
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt=""> 
+                    <img src="./img/potato.png" alt="">
                 </div>
             </div>
             <div class="donutsbox">
@@ -202,8 +210,8 @@
                 </div>
                 <p class="ex">繧､繧ｿ繝ｪ繧｢BABBI遉ｾ縺ｮ<br class="phonebr">100・・ヴ繧ｹ繧ｿ繝√が<br class="pcbr">繝壹・繧ｹ繝医ｒ<br class="phonebr">雍・ｲ｢縺ｫ菴ｿ逕ｨ</p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt="">
+                    <img src="./img/potato.png" alt="">
                 </div>
             </div>
             <div class="donutsbox">
@@ -214,8 +222,8 @@
                 </div>
                 <p class="ex">繝吶Ν繧ｬ繝｢繝・ヨ鬥吶ｋ繧｢繝ｼ繝ｫ繧ｰ繝ｬ繧､<br class="phonebr">逕溷慍縺ｫ<br class="pcbr">譛画ｩ溽┌霎ｲ阮ｬ繝ｬ繝｢繝ｳ繧ｰ繝ｬ繝ｼ繧ｺ繧・br class="phonebr">繝医ャ繝斐Φ繧ｰ</p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt="">
+                    <img src="./img/potato.png" alt="">
                 </div>
             </div>
             <div class="donutsbox">
@@ -226,8 +234,8 @@
                 </div>
                 <p class="ex">縺阪↑縺薙ラ繝ｼ繝翫ヤ縺ｫ繧ｰ繝ｬ繝ｼ繧ｺ<br class="phonebr">繧ｽ繝ｼ繧ｹ繧偵◆縺｣縺ｷ繧翫・br class="pcbr">縺輔ｉ縺ｫ逕倥＆<br class="phonebr">謗ｧ縺医ａ縺ｮ蟆剰ｱ・ｒ繝医ャ繝斐Φ繧ｰ</p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt="">
+                    <img src="./img/potato.png" alt="">
                 </div>
             </div>
             <div class="donutsbox">
@@ -238,9 +246,9 @@
                 </div>
                 <p class="ex">蝗ｽ逕｣鮟偵＃縺ｾ繧偵§縺｣縺上ｊ縺ｨ<br class="phonebr">逧ｮ縺斐→邱ｴ繧贋ｸ翫￡縺・br>豼・字辟咏・鮟偵＃縺ｾ繧ｰ繝ｬ繝ｼ繧ｺ繧ｽ繝ｼ繧ｹ</p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/black_sesame.png" alt="鮟偵＃縺ｾ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt="">
+                    <img src="./img/potato.png" alt="">
+                    <img src="./img/black_sesame.png" alt="">
                 </div>
             </div>
             <div class="donutsbox">
@@ -251,9 +259,9 @@
                 </div>
                 <p class="ex">繝薙ち繝ｼ縺ｪ逕倥＆縺ｮ閾ｪ螳ｶ陬ｽ繧ｯ繝ｼ繝吶Ν<br class="phonebr">繝√Η繝ｼ繝ｫ繝√Ι繧ｳ繝ｬ繝ｼ繝医ｒ<br class="phonebr">繧ｷ繝ｧ繧ｳ繝ｩ繝峨・繝翫ヤ縺ｫ繝医ャ繝斐Φ繧ｰ</p>
                 <div class="are">
-                    <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
-                    <img src="./img/almond.png" alt="繧｢繝ｼ繝｢繝ｳ繝峨ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
+                    <img src="./img/soy-are.png" alt="">
+                    <img src="./img/potato.png" alt="">
+                    <img src="./img/almond.png" alt="">
                 </div>
                 </div>
                 <div class="donutsbox">
@@ -264,8 +272,8 @@
                     </div>
                     <p class="ex">鬥吝袖雎翫°縺ｪ蜈ｫ螂ｳ謚ｹ闌ｶ繝峨・繝翫ヤ縺ｫ縲・br>縺ゅｓ縺薙ｒ繝医ャ繝斐Φ繧ｰ縺励◆蜥後ラ繝ｼ繝翫ヤ</p>
                     <div class="are">
-                        <img src="./img/soy-are.png" alt="螟ｧ雎・ｒ菴ｿ逕ｨ縺励※縺・∪縺・>
-                        <img src="./img/potato.png" alt="繧・∪縺・ｂ繧剃ｽｿ逕ｨ縺励※縺・∪縺・>
+                        <img src="./img/soy-are.png" alt="">
+                        <img src="./img/potato.png" alt="">
                     </div>
                 </div>
             </div>
@@ -282,5 +290,8 @@
     <div class="copylight">
         <small>&copy; 2024 SoyStories</small>
     </div>
+    <!-- JS -->
+    <script src="./js/lib/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -3,77 +3,87 @@
 <head prefix="og: https://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【Official】SoyStories | Gluten-Free & Plant-Based Sweets</title>
+    <title>【공식】SoyStories | 글루텐 프리 & 플랜트 베이스 디저트</title>
+    <meta name="description" content="福岡市中央区薬院にあるグルテンフリー、プラントベース、アレルギー対応のスイーツ店です。小麦、乳、卵、白砂糖を使用しないスイーツの販売を行っています。イートイン、テイクアウトともに可能です。">
     <meta name="robots" content="noindex, nofollow">
     <!-- カノニカル -->
     <link rel="canonical" href="">
-    <!-- OGP -->
+    <!-- ogp -->
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="SoyStories">
     <meta property="og:description" content="福岡市中央区薬院にあるグルテンフリー、プラントベース、アレルギー対応のスイーツ店です。小麦、乳、卵、白砂糖を使用しないスイーツの販売を行っています。イートイン、テイクアウトともに可能です。">
     <meta property="og:image" content="">
-    <!-- GoogleFonts -->
+    <!-- ファビコン -->
+    <link rel="icon" type="img/png" href="../img/favicon.ico">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
-    <!-- ファビコン -->
-    <link rel="icon" type="img/png" href="../img/favicon.ico">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress@5.0.2/dist/ress.min.css">
+    <!-- css -->
+     <link rel="stylesheet" href="../css/lib/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- AIO Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "SoyStories",
+      "image": "https://vegan.jp/img/fv_logo.png",
+      "servesCuisine": "Vegan, Gluten-Free, Plant-Based Sweets",
+      "address": { "@type": "PostalAddress", "streetAddress": "薬院2丁目2-24", "addressLocality": "福岡市中央区", "addressRegion": "福岡県", "postalCode": "810-0022", "addressCountry": "JP" }
+    }
+    </script>
+    <link rel="stylesheet" href="../css/detail.css">
 </head> 
 <body>
     <header class="header">
         <div class="header__inner inner">
             <h1 class="header__logo">
-                <a href="./index.html"><img src="../img/logo_header.png" alt="Soy stories"></a>
+                <a href="../index.html"><img src="../img/logo_header.png" alt="Soy stories"></a>
             </h1>
             <div class="header__nav-sp">
-                <a href="https://soystories.com/" class="header__button-sp" target="_blank">Online Store</a>
+                <a href="https://www.google.com/maps?q=〒810-0022+福岡県福岡市中央区薬院２丁目２−２４+チサンマンション第3博多+1F+グルテンフリー＆100％植物性スイーツ+Soy+Stories（vegan＆gluten+free）" class="header__button-sp" target="_blank">Google 지도로 보기</a>
+                <button id="js-drawer-icon" class="header__open drawer-icon">
+                    <span class="drawer-icon__bar"></span>
+                    <span class="drawer-icon__bar"></span>
+                    <span class="drawer-icon__bar"></span>
+                </button>
             </div>
             <nav class="header__nav">
-                <a href="https://soystories.com/" class="header__button" target="_blank">Online Store</a>
+                <a href="#concept" class="header__link">Concept</a>
+                <a href="#menu" class="header__link">Menu</a>
+                <a href="#commitment" class="header__link">当店のこだわり</a>
+                <a href="#qa" class="header__link">Q&A</a>
+                <a href="#access" class="header__link">Access</a>
+                <div style="display:flex; align-items:center; margin-left:16px; margin-right:16px; gap:8px; font-family:sans-serif; font-size:12px;">
+                    <a href="index.html" style="color:#7C8A53; font-weight:bold;">JP</a><span style="color:#ccc;">|</span>
+                    <a href="en/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">EN</a><span style="color:#ccc;">|</span>
+                    <a href="ko/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">KO</a><span style="color:#ccc;">|</span>
+                    <a href="zh-tw/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">繁</a><span style="color:#ccc;">|</span>
+                    <a href="zh-cn/index.html" style="color:#999; transition:color 0.3s;" onmouseover="this.style.color='#7C8A53'" onmouseout="this.style.color='#999'">簡</a>
+                </div>
+                <a href="https://www.google.com/maps?q=〒810-0022+福岡県福岡市中央区薬院２丁目２−２４+チサンマンション第3博多+1F+グルテンフリー＆100％植物性スイーツ+Soy+Stories（vegan＆gluten+free）" class="header__button" target="_blank">Google 지도로 보기</a>
             </nav>
         </div>
-        <!-- Menu -->
-        <nav class="menu-nav">
-            <div class="nav-1">
-                <a href="./waffle&soft.html" class="menu-nav-link">
-                    <div class="one-nav" id="waffle-soft">
-                        <div class="kind-jp"><div id="kind-jp-waffle-top">Waffle</div>Soft Serve</div>
-                        <div class="kind-en">Waffle&softcream</div>
-                    </div>
-                </a>
-                <a href="#" class="menu-nav-link">
-                    <div class="one-nav" id="softcream">
-                        <div class="kind-jp" id="jp-softcream">Soft Serve</div>
-                        <div class="kind-en">Softcream</div>
-                    </div>
-                </a>
-            </div>
-            <div class="nav-2">
-                <a href="./waffle.html" class="menu-nav-link">
-                    <div class="two-nav" id="waffles">
-                        <div class="kind-jp">Waffle</div>
-                        <div class="kind-en">Waffle</div>
-                    </div>
-                </a>
-                <a href="./dounuts.html" class="menu-nav-link">
-                    <div class="two-nav" id="donut">
-                        <div class="kind-jp">Donuts</div>
-                        <div class="kind-en">Donut</div>
-                    </div>
-                </a>
-                <a href="./ice.html" class="menu-nav-link">
-                    <div class="two-nav" id="icecream">
-                        <div class="kind-jp">Rice Flour Gelato</div>
-                        <div class="kind-en">Rice flour gelato</div>
-                    </div>
-                </a>
-            </div>
-        </nav>
+        <div id="js-drawer-content" class="drawer-content">
+            <nav class="drawer-content__menu">
+                <a href="#concept" class="drawer-content__link">Concept</a>
+                <a href="#menu" class="drawer-content__link">Menu</a>
+                <a href="#commitment" class="drawer-content__link">当店のこだわり</a>
+                <a href="#qa" class="drawer-content__link">Q&A</a>
+                <a href="#access" class="drawer-content__link">Access</a>
+                <a href="https://www.google.com/maps?q=〒810-0022+福岡県福岡市中央区薬院２丁目２−２４+チサンマンション第3博多+1F+グルテンフリー＆100％植物性スイーツ+Soy+Stories（vegan＆gluten+free）" class="drawer-content__button" target="_blank">Google 지도로 보기</a>
+                <div style="margin-top:24px; display:flex; justify-content:center; gap:16px; font-family:sans-serif; font-size:14px; padding-bottom:24px;">
+                    <a href="index.html" style="color:#7C8A53; font-weight:bold;">JP</a>
+                    <a href="../en/index.html" style="color:#999;">EN</a>
+                    <a href="index.html" style="color:#7C8A53; font-weight:bold;">KO</a>
+                    <a href="zh-tw/index.html" style="color:#999;">繁</a>
+                    <a href="zh-cn/index.html" style="color:#999;">簡</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <!-- MENUタイトル -->
     <div class="title"><h2 class="inner"><span>Soft&ensp;serve&ensp;ice&ensp;cream</span><span id="title-sub">Soft Serve</span></h2></div>
@@ -184,5 +194,8 @@
     <div class="copylight">
         <small>&copy; 2024 SoyStories</small>
     </div>
+    <!-- JS -->
+    <script src="../js/lib/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
