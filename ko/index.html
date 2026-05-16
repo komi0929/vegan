@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoyStories 후쿠오카 — 한국에서 가장 가까운 비건 & 글루텐 프리 디저트 성지 | ★5.0 HappyCow</title>
     <meta name="description" content="★5.0 HappyCow 만점. 후쿠오카 야쿠인의 100% 비건, 글루텐 프리 디저트 전문점. 완전 전용 시설, 교차 오염 제로. 버블 와플, 소이 소프트, 크래프트 도넛. 야쿠인역 도보 3분. 매일 11:00-22:00 영업.">
+        <meta name="revised" content="2026-05-16T15:35:25+09:00">
+    <meta name="author" content="SoyStories">
     <meta name="robots" content="noindex, nofollow">
     <!-- カノニカル -->
     <link rel="canonical" href="">
@@ -27,29 +29,46 @@
     <link rel="stylesheet" href="../css/inbound.css">
     <!-- AIO Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "Restaurant",
+      "@id": "https://soystories.jp/ko/#restaurant",
       "name": "SoyStories",
       "image": "https://soystories.jp/img/fv_logo.png",
       "url": "https://soystories.jp/ko/",
-      "servesCuisine": ["Vegan", "Gluten-Free", "Plant-Based Sweets"],
+      "description": "100% Vegan and Gluten-Free Sweets Shop in Fukuoka, Japan. Zero cross-contamination dedicated facility.",
+      "servesCuisine": [
+        "Vegan",
+        "Gluten-Free",
+        "Plant-Based",
+        "Dessert"
+      ],
       "priceRange": "¥",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "11:00",
-        "closes": "22:00"
-      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "2-2-24 Yakuin, Chisan Mansion Daisan Hakata 1F",
-        "addressLocality": "Chuo-ku, Fukuoka",
+        "addressLocality": "Chuo-ku, Fukuoka-shi",
         "addressRegion": "Fukuoka",
         "postalCode": "810-0022",
         "addressCountry": "JP"
       },
       "telephone": "+81-92-231-0677",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "11:00",
+        "closes": "22:00"
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
@@ -59,8 +78,66 @@
       "sameAs": [
         "https://www.instagram.com/soystories_yakuin/",
         "https://www.happycow.net/reviews/soy-stories-fukuoka-291702"
+      ],
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Vegan & Gluten-Free Menu",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Bubble Waffle & Soy Soft Serve",
+            "suitableForDiet": "https://schema.org/VeganDiet"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Gluten-Free Bubble Waffle",
+            "suitableForDiet": "https://schema.org/GlutenFreeDiet"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Soy Soft Serve",
+            "suitableForDiet": "https://schema.org/VeganDiet"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Soy Donut",
+            "suitableForDiet": "https://schema.org/VeganDiet"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://soystories.jp/ko/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "매장 내 취식 공간이 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 매장에 4석이 마련되어 있습니다. 전 상품 포장도 가능합니다. 매장에서는 소프트 아이스크림과 와플을, 포장으로는 도넛과 크래프트 아이스크림을 추천합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "포장한 도넛은 어떻게 먹는 게 좋나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "가장 맛있는 상태로 제공하기 위해 냉동 상태로 판매하고 있습니다. 전자레인지(600W에서 1분)로 데워 드시기 바랍니다. 유통기한은 냉동 시 3개월입니다. 해동 후에는 냉장 보관하며 3일 이내에 드시기 바랍니다. 매장에서 데워서 제공해 드릴 수도 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "주차장이 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "전용 주차장은 없습니다. 근처의 코인 주차장을 이용해 주시기 바랍니다."
+          }
+        }
       ]
     }
+  ]
+}
     </script>
     <link rel="alternate" hreflang="ja" href="https://soystories.jp/">
     <link rel="alternate" hreflang="en" href="https://soystories.jp/en/">

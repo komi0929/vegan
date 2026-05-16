@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoyStories Fukuoka — Best Vegan & Gluten-Free Sweets in Japan | ★5.0 HappyCow</title>
     <meta name="description" content="★5.0 on HappyCow. 100% vegan, gluten-free sweets in Yakuin, Fukuoka. Zero cross-contamination dedicated facility. Bubble waffles, soy soft serve, craft donuts. 3 min walk from Yakuin Station. Open daily 11:00-22:00.">
+        <meta name="revised" content="2026-05-16T15:35:25+09:00">
+    <meta name="author" content="SoyStories">
     <meta name="robots" content="noindex, nofollow">
     <!-- カノニカル -->
     <link rel="canonical" href="">
@@ -27,29 +29,46 @@
     <link rel="stylesheet" href="../css/inbound.css">
     <!-- AIO Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "Restaurant",
+      "@id": "https://soystories.jp/en/#restaurant",
       "name": "SoyStories",
       "image": "https://soystories.jp/img/fv_logo.png",
       "url": "https://soystories.jp/en/",
-      "servesCuisine": ["Vegan", "Gluten-Free", "Plant-Based Sweets"],
+      "description": "100% Vegan and Gluten-Free Sweets Shop in Fukuoka, Japan. Zero cross-contamination dedicated facility.",
+      "servesCuisine": [
+        "Vegan",
+        "Gluten-Free",
+        "Plant-Based",
+        "Dessert"
+      ],
       "priceRange": "¥",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "11:00",
-        "closes": "22:00"
-      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "2-2-24 Yakuin, Chisan Mansion Daisan Hakata 1F",
-        "addressLocality": "Chuo-ku, Fukuoka",
+        "addressLocality": "Chuo-ku, Fukuoka-shi",
         "addressRegion": "Fukuoka",
         "postalCode": "810-0022",
         "addressCountry": "JP"
       },
       "telephone": "+81-92-231-0677",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "11:00",
+        "closes": "22:00"
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
@@ -59,8 +78,66 @@
       "sameAs": [
         "https://www.instagram.com/soystories_yakuin/",
         "https://www.happycow.net/reviews/soy-stories-fukuoka-291702"
+      ],
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Vegan & Gluten-Free Menu",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Bubble Waffle & Soy Soft Serve",
+            "suitableForDiet": "https://schema.org/VeganDiet"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Gluten-Free Bubble Waffle",
+            "suitableForDiet": "https://schema.org/GlutenFreeDiet"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Soy Soft Serve",
+            "suitableForDiet": "https://schema.org/VeganDiet"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Soy Donut",
+            "suitableForDiet": "https://schema.org/VeganDiet"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://soystories.jp/en/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you have an eat-in space?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we have 4 seats inside the store. All items are also available for take-out. We recommend our soft serve and waffles for eat-in, and donuts and craft ice cream for take-out."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should I eat the take-out donuts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our donuts are sold frozen to maintain their deliciousness. Please warm them up in the microwave (600W for 1 minute) before eating. They last 3 months frozen. After thawing, consume within 3 days (keep refrigerated). We can also warm them up for you in the store."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a parking lot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We do not have a private parking lot. Please use a nearby coin parking area."
+          }
+        }
       ]
     }
+  ]
+}
     </script>
     <link rel="alternate" hreflang="ja" href="https://soystories.jp/">
     <link rel="alternate" hreflang="en" href="https://soystories.jp/en/">
