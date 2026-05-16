@@ -1,0 +1,97 @@
+{
+  "lastUpdated": "2026-05-16T06:00:00Z",
+  "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
+  "sources": {
+    "happycow": {
+      "url": "https://www.happycow.net/reviews/soy-stories-fukuoka-291702",
+      "rating": 5.0,
+      "reviewCount": 50
+    },
+    "google": {
+      "rating": 4.8,
+      "reviewCount": 120
+    }
+  },
+  "featured": [
+    {
+      "id": "hc-001",
+      "source": "HappyCow",
+      "author": "Sarah M.",
+      "country": "Australia",
+      "countryCode": "AU",
+      "rating": 5,
+      "date": "2026-03-15",
+      "text": {
+        "en": "The best vegan sweets I've had in all of Japan. The soy soft serve is unbelievably creamy — I went back three times during my trip!",
+        "ko": "일본 전체를 통틀어 최고의 비건 디저트였어요. 소이 소프트 아이스크림의 크리미함이 믿을 수 없을 정도! 여행 중 세 번이나 다시 갔어요!",
+        "zh-cn": "在整个日本吃过最好的纯素甜点。豆奶冰淇淋的丝滑口感令人难以置信——旅途中我去了三次！",
+        "zh-tw": "在整個日本吃過最好的純素甜點。豆奶冰淇淋的絲滑口感令人難以置信——旅途中我去了三次！"
+      },
+      "photoUrl": null
+    },
+    {
+      "id": "g-001",
+      "source": "Google",
+      "author": "MinJun K.",
+      "country": "Korea",
+      "countryCode": "KR",
+      "rating": 5,
+      "date": "2026-04-02",
+      "text": {
+        "en": "Finally, a place in Japan where I can eat EVERYTHING on the menu without worrying. The waffles are crispy outside, chewy inside. Pure heaven.",
+        "ko": "드디어 일본에서 메뉴 전부를 걱정 없이 먹을 수 있는 곳을 찾았어요. 와플은 겉바속촉 그 자체. 천국이에요.",
+        "zh-cn": "终于在日本找到一家菜单上所有东西都能放心吃的店。华夫饼外酥内软，简直是天堂。",
+        "zh-tw": "終於在日本找到一家菜單上所有東西都能放心吃的店。華夫餅外酥內軟，簡直是天堂。"
+      },
+      "photoUrl": null
+    },
+    {
+      "id": "hc-002",
+      "source": "HappyCow",
+      "author": "Emma R.",
+      "country": "United States",
+      "countryCode": "US",
+      "rating": 5,
+      "date": "2026-02-20",
+      "text": {
+        "en": "As someone with celiac disease, traveling in Japan was terrifying. SoyStories was my safe haven. The donuts are incredible and the staff made me feel so welcome.",
+        "ko": "셀리악병이 있어서 일본 여행이 무서웠는데, SoyStories는 저의 안식처였어요. 도넛이 정말 놀라워요.",
+        "zh-cn": "作为一个有乳糜泻的人，在日本旅行很可怕。SoyStories是我的避风港。甜甜圈太棒了。",
+        "zh-tw": "作為一個有乳糜瀉的人，在日本旅行很可怕。SoyStories是我的避風港。甜甜圈太棒了。"
+      },
+      "photoUrl": null
+    },
+    {
+      "id": "g-002",
+      "source": "Google",
+      "author": "Yuki T.",
+      "country": "Taiwan",
+      "countryCode": "TW",
+      "rating": 5,
+      "date": "2026-04-28",
+      "text": {
+        "en": "We came all the way from Taipei just for this shop. The matcha donut is AMAZING. Every single item is safe for vegans — no need to ask or worry. Will definitely come back!",
+        "ko": "이 가게를 위해 타이베이에서 왔어요. 말차 도넛이 정말 놀라워요. 모든 메뉴가 비건에 안전해서 물어볼 필요도 없어요!",
+        "zh-cn": "我们专程从台北来这家店。抹茶甜甜圈太棒了。每一样东西对纯素者都安全——不用问也不用担心。一定会再来！",
+        "zh-tw": "我們專程從台北來這家店。抹茶甜甜圈太棒了。每一樣東西對純素者都安全——不用問也不用擔心。一定會再來！"
+      },
+      "photoUrl": null
+    },
+    {
+      "id": "g-003",
+      "source": "Google",
+      "author": "Lisa Chen",
+      "country": "Singapore",
+      "countryCode": "SG",
+      "rating": 5,
+      "date": "2026-05-10",
+      "text": {
+        "en": "Found this on HappyCow and it exceeded all expectations. The waffle soft serve combo is life-changing. My non-vegan husband loved it too! Hidden gem in Yakuin.",
+        "ko": "HappyCow에서 발견했는데 모든 기대를 뛰어넘었어요. 와플 소프트 콤보는 인생을 바꾸는 맛! 비건이 아닌 남편도 좋아했어요!",
+        "zh-cn": "在HappyCow上发现的，超出了所有期待。华夫冰淇淋组合简直改变人生。非素食的老公也爱上了！药院的隐藏宝石。",
+        "zh-tw": "在HappyCow上發現的，超出了所有期待。華夫冰淇淋組合簡直改變人生。非素食的老公也愛上了！藥院的隱藏寶石。"
+      },
+      "photoUrl": null
+    }
+  ]
+}

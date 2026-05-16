@@ -521,3 +521,339 @@
 .animate-in--delay-1 { animation-delay: 0.1s; opacity: 0; }
 .animate-in--delay-2 { animation-delay: 0.2s; opacity: 0; }
 .animate-in--delay-3 { animation-delay: 0.3s; opacity: 0; }
+
+/* ============================================
+   LIVE REVIEWS — Dynamic Carousel
+   ============================================ */
+#live-reviews {
+  background: linear-gradient(180deg, #FAFAF5 0%, #F5F3EC 100%);
+  padding: 60px 16px;
+}
+
+.live-reviews__inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.live-reviews__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.live-reviews__title {
+  font-family: var(--ff-sans);
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
+.live-reviews__live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #E53935;
+  color: #fff;
+  font-family: var(--ff-sans);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+.live-reviews__subtitle {
+  font-family: var(--ff-sans);
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Rating summary */
+.live-reviews__summary {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.live-reviews__source-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.live-reviews__source-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.live-reviews__source-rating {
+  font-family: var(--ff-sans);
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.live-reviews__source-stars {
+  font-size: 14px;
+  color: var(--gold-star);
+  margin-left: 4px;
+}
+
+.live-reviews__source-count {
+  font-family: var(--ff-sans);
+  font-size: 11px;
+  color: #999;
+}
+
+/* Carousel track */
+.live-reviews__track-wrapper {
+  overflow: hidden;
+  margin: 0 -8px;
+}
+
+.live-reviews__track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.live-review__card {
+  flex: 0 0 calc(100% / 1);
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .live-review__card { flex: 0 0 calc(100% / 2); }
+}
+
+@media (min-width: 1024px) {
+  .live-review__card { flex: 0 0 calc(100% / 3); }
+}
+
+.live-review__card > * {
+  pointer-events: auto;
+}
+
+/* Card inner styling */
+.live-review__card {
+  cursor: default;
+}
+
+.live-review__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 16px 16px 0 0;
+  padding: 20px 20px 0;
+}
+
+.live-review__avatar {
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border-radius: 50%;
+}
+
+.live-review__meta {
+  flex: 1;
+}
+
+.live-review__author {
+  display: block;
+  font-family: var(--ff-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.live-review__origin {
+  display: block;
+  font-family: var(--ff-sans);
+  font-size: 11px;
+  color: #999;
+}
+
+.live-review__source-badge {
+  font-family: var(--ff-sans);
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  background: #6D8059;
+  padding: 3px 8px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.live-review__stars {
+  color: var(--gold-star);
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: #fff;
+  padding: 4px 20px;
+}
+
+.live-review__photo {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  background: #fff;
+}
+
+.live-review__text {
+  font-family: var(--ff-sans);
+  font-size: 13px;
+  color: #555;
+  line-height: 1.7;
+  font-style: italic;
+  background: #fff;
+  padding: 8px 20px 16px;
+}
+
+.live-review__date {
+  display: block;
+  font-family: var(--ff-sans);
+  font-size: 11px;
+  color: #bbb;
+  background: #fff;
+  padding: 0 20px 16px;
+  border-radius: 0 0 16px 16px;
+}
+
+/* Navigation */
+.live-reviews__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.live-reviews__nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #666;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.live-reviews__nav-btn:hover {
+  background: #6D8059;
+  color: #fff;
+  border-color: #6D8059;
+}
+
+.live-reviews__dots {
+  display: flex;
+  gap: 6px;
+}
+
+.live-reviews__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.live-reviews__dot.active {
+  background: #6D8059;
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* ============================================
+   INSTAGRAM SECTION
+   ============================================ */
+#instagram-feed {
+  background: #fff;
+  padding: 48px 16px;
+  text-align: center;
+}
+
+.instagram-section__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.instagram-section__title {
+  font-family: var(--ff-sans);
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.instagram-section__subtitle {
+  font-family: var(--ff-sans);
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.instagram-section__cta {
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-section__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-family: var(--ff-sans);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  box-shadow: 0 4px 14px rgba(225, 48, 108, 0.3);
+  transition: all 0.3s ease;
+}
+
+.instagram-section__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(225, 48, 108, 0.4);
+}
+
+.instagram-section__btn svg {
+  flex-shrink: 0;
+}
+
