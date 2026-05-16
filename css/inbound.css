@@ -1,0 +1,523 @@
+@charset "UTF-8";
+
+/* ============================================
+   INBOUND CONVERSION ENGINE — SoyStories
+   Layered on top of style.css
+   ============================================ */
+
+:root {
+  --trust-green: #4CAF50;
+  --trust-green-dark: #388E3C;
+  --gold-star: #FFB300;
+  --badge-bg: #1B5E20;
+  --safety-bg: #F1F8E9;
+  --review-bg: #FAFAF5;
+  --cta-maps: #1a73e8;
+  --cta-maps-hover: #1557b0;
+  --ff-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --ff-serif-en: 'Noto Serif JP', serif;
+}
+
+/* ---- Google Fonts: Inter for UI elements ---- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ============================================
+   TRUST BANNER (below first view)
+   ============================================ */
+.trust-banner {
+  background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 50%, #388E3C 100%);
+  color: #fff;
+  padding: 20px 16px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.trust-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.trust-banner__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.trust-banner__stars {
+  font-size: 28px;
+  letter-spacing: 4px;
+  margin-bottom: 4px;
+  color: var(--gold-star);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.trust-banner__rating {
+  font-family: var(--ff-sans);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  opacity: 0.95;
+}
+
+.trust-banner__rating a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.trust-banner__sub {
+  font-family: var(--ff-sans);
+  font-size: 12px;
+  margin-top: 6px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ============================================
+   OPEN NOW INDICATOR
+   ============================================ */
+.open-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--ff-sans);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.open-indicator--open {
+  background: rgba(255,255,255,0.15);
+  color: #A5D6A7;
+  border: 1px solid rgba(165,214,167,0.3);
+}
+
+.open-indicator--closed {
+  background: rgba(255,255,255,0.1);
+  color: #EF9A9A;
+  border: 1px solid rgba(239,154,154,0.3);
+}
+
+.open-indicator__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.open-indicator--open .open-indicator__dot {
+  background: #66BB6A;
+  box-shadow: 0 0 6px #66BB6A;
+}
+
+.open-indicator--closed .open-indicator__dot {
+  background: #EF5350;
+  box-shadow: 0 0 6px #EF5350;
+  animation: none;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+/* ============================================
+   HERO CTA BUTTONS
+   ============================================ */
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 20px 16px 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-family: var(--ff-sans);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  border: none;
+  letter-spacing: 0.3px;
+}
+
+.hero-cta__btn--maps {
+  background: var(--cta-maps);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(26,115,232,0.4);
+}
+
+.hero-cta__btn--maps:hover {
+  background: var(--cta-maps-hover);
+  box-shadow: 0 6px 20px rgba(26,115,232,0.5);
+  transform: translateY(-2px);
+}
+
+.hero-cta__btn--menu {
+  background: #fff;
+  color: #6D8059;
+  border: 2px solid #6D8059;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.hero-cta__btn--menu:hover {
+  background: #6D8059;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.hero-cta__btn-icon {
+  font-size: 18px;
+}
+
+/* ============================================
+   SAFETY PROMISE SECTION
+   ============================================ */
+.safety-promise {
+  background: var(--safety-bg);
+  padding: 60px 16px;
+  position: relative;
+}
+
+.safety-promise__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.safety-promise__badge {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.safety-promise__badge-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--trust-green), var(--trust-green-dark));
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 16px rgba(76,175,80,0.3);
+}
+
+.safety-promise__title {
+  font-family: var(--ff-sans);
+  font-size: 24px;
+  font-weight: 700;
+  color: #1B5E20;
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
+.safety-promise__subtitle {
+  font-family: var(--ff-sans);
+  font-size: 14px;
+  color: #558B2F;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.safety-promise__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .safety-promise__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+.safety-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border: 1px solid rgba(109,128,89,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.safety-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.safety-card__icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.safety-card__title {
+  font-family: var(--ff-sans);
+  font-size: 16px;
+  font-weight: 700;
+  color: #2E7D32;
+  margin-bottom: 8px;
+}
+
+.safety-card__text {
+  font-family: var(--ff-sans);
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ============================================
+   TRAVELER REVIEWS
+   ============================================ */
+.traveler-reviews {
+  background: var(--review-bg);
+  padding: 60px 16px;
+}
+
+.traveler-reviews__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.traveler-reviews__title {
+  font-family: var(--ff-sans);
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.traveler-reviews__subtitle {
+  font-family: var(--ff-sans);
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.review-card__stars {
+  color: var(--gold-star);
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.review-card__text {
+  font-family: var(--ff-sans);
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.review-card__author {
+  font-family: var(--ff-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+}
+
+.review-card__source {
+  font-family: var(--ff-sans);
+  font-size: 11px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+/* ============================================
+   QUICK ACCESS BAR (sticky bottom on mobile)
+   ============================================ */
+.quick-access {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .quick-access {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding: 10px 16px;
+    gap: 8px;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
+  }
+
+  .quick-access__btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 8px;
+    border-radius: 12px;
+    font-family: var(--ff-sans);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .quick-access__btn--maps {
+    background: var(--cta-maps);
+    color: #fff;
+  }
+
+  .quick-access__btn--call {
+    background: #43A047;
+    color: #fff;
+  }
+
+  /* Add bottom padding to body so content isn't hidden behind sticky bar */
+  body {
+    padding-bottom: 70px;
+  }
+}
+
+/* ============================================
+   WALKING DISTANCE BADGE
+   ============================================ */
+.walking-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--ff-sans);
+  font-size: 13px;
+  color: #fff;
+  opacity: 0.85;
+  margin-top: 6px;
+}
+
+/* ============================================
+   ENHANCED ACCESS SECTION
+   ============================================ */
+.access-enhanced__directions {
+  margin-top: 16px;
+}
+
+.access-enhanced__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--cta-maps);
+  color: #fff;
+  border-radius: 8px;
+  font-family: var(--ff-sans);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.access-enhanced__btn:hover {
+  background: var(--cta-maps-hover);
+  transform: translateY(-1px);
+}
+
+/* ============================================
+   ALLERGEN-FREE BADGES (inline)
+   ============================================ */
+.allergen-badges {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.allergen-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--ff-sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(255,255,255,0.12);
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.allergen-badge__icon {
+  font-size: 14px;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-in--delay-1 { animation-delay: 0.1s; opacity: 0; }
+.animate-in--delay-2 { animation-delay: 0.2s; opacity: 0; }
+.animate-in--delay-3 { animation-delay: 0.3s; opacity: 0; }
