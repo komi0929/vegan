@@ -895,3 +895,44 @@
     padding: 12px 36px;
   }
 }
+
+/* --- FIX FOR HERO TEXT VISIBILITY --- */
+
+.fv__content--en {
+  position: relative !important;
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  margin-top: 70px !important;
+  z-index: 20 !important;
+}
+
+.fv__text-en {
+  writing-mode: horizontal-tb !important;
+  font-size: 16px !important;
+  letter-spacing: 2px !important;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 12px 24px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+@media(min-width: 768px) {
+  .fv__content--en {
+    margin-top: 130px !important;
+  }
+  .fv__text-en {
+    font-size: 22px !important;
+    letter-spacing: 4px !important;
+    padding: 16px 36px;
+  }
+}
