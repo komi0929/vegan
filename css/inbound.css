@@ -857,3 +857,41 @@
   flex-shrink: 0;
 }
 
+
+/* ============================================
+   ENGLISH HERO TEXT OVERRIDES
+   ============================================ */
+.fv__content--en {
+  top: auto !important;
+  bottom: -40px !important;
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  transform: translateX(-50%) !important;
+}
+
+.fv__text-en {
+  writing-mode: horizontal-tb !important;
+  font-size: 16px !important;
+  letter-spacing: 2px !important;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 8px 24px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+@media(min-width: 768px) {
+  .fv__content--en {
+    bottom: -60px !important;
+  }
+  .fv__text-en {
+    font-size: 22px !important;
+    letter-spacing: 4px !important;
+    padding: 12px 36px;
+  }
+}
