@@ -25,6 +25,8 @@
    TRUST BANNER (below first view)
    ============================================ */
 .trust-banner {
+  z-index: 20;
+  position: relative;
   background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 50%, #388E3C 100%);
   color: #fff;
   padding: 20px 16px;
@@ -133,6 +135,8 @@
    HERO CTA BUTTONS
    ============================================ */
 .hero-cta {
+  position: relative;
+  z-index: 20;
   display: flex;
   justify-content: center;
   gap: 12px;
