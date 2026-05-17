@@ -1,0 +1,39 @@
+name: LLMO Auto-Freshness Engine
+
+on:
+  schedule:
+    # Run at midnight UTC every Sunday and Wednesday
+    - cron: '0 0 * * 0,3'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Inject Freshness Timestamp
+        run: |
+          python .github/scripts/inject_freshness.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "LLMO Auto-Bot"
+          git config --global user.email "bot@soystories.jp"
+          git add -u
+          # Check if there are changes before committing
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(llmo): auto-update freshness tags for AI SEO"
+            git push
+          fi
