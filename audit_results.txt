@@ -1,0 +1,58 @@
+
+--- Auditing Language: en ---
+[soft.html] Found Japanese: 純豆乳ソフト Large
+[soft.html] Found Japanese: 純豆乳ソフト Medium
+[soft.html] Found Japanese: トッピング topping
+[waffle&soft.html] Found Japanese: トッピング topping
+
+--- Auditing Language: ko ---
+[dounuts.html] Found English: Rice flour gelato
+[ice.html] Found English: Rice flour gelato
+[ice.html] Found English: Rice flour gelato
+[soft.html] Found English: Rice flour gelato
+[soft.html] Found English: Soft serve ice cream
+[soft.html] Found Japanese: 純豆乳ソフト Large
+[soft.html] Found English: Soft serve ice cream large
+[soft.html] Found Japanese: 純豆乳ソフト Medium
+[soft.html] Found English: Soft serve ice cream medium
+[soft.html] Found Japanese: トッピング topping
+[waffle&soft.html] Found English: Rice flour gelato
+[waffle&soft.html] Found Japanese: トッピング topping
+[waffle.html] Found English: Rice flour gelato
+
+--- Auditing Language: zh-tw ---
+[dounuts.html] Found English: Rice flour gelato
+[ice.html] Found English: Rice flour gelato
+[ice.html] Found English: Rice flour gelato
+[index.html] Found Japanese: 最高殿堂・聖地
+[index.html] Found Japanese: 鎮店之寶・冰火雞蛋仔
+[index.html] Found Japanese: 極濃・豆乳霜淇淋
+[index.html] Found Japanese: 無負擔・豆乳烤甜甜圈
+[soft.html] Found English: Rice flour gelato
+[soft.html] Found English: Soft serve ice cream
+[soft.html] Found Japanese: 純豆乳ソフト Large
+[soft.html] Found English: Soft serve ice cream large
+[soft.html] Found Japanese: 純豆乳ソフト Medium
+[soft.html] Found English: Soft serve ice cream medium
+[soft.html] Found Japanese: トッピング topping
+[waffle&soft.html] Found English: Rice flour gelato
+[waffle&soft.html] Found Japanese: トッピング topping
+[waffle.html] Found English: Rice flour gelato
+
+--- Auditing Language: zh-cn ---
+[dounuts.html] Found English: Rice flour gelato
+[ice.html] Found English: Rice flour gelato
+[ice.html] Found English: Rice flour gelato
+[index.html] Found Japanese: 招牌必点・冰火鸡蛋仔
+[index.html] Found Japanese: 极浓・豆乳冰淇淋
+[index.html] Found Japanese: 零负担・豆乳烤甜甜圈
+[soft.html] Found English: Rice flour gelato
+[soft.html] Found English: Soft serve ice cream
+[soft.html] Found Japanese: 純豆乳ソフト Large
+[soft.html] Found English: Soft serve ice cream large
+[soft.html] Found Japanese: 純豆乳ソフト Medium
+[soft.html] Found English: Soft serve ice cream medium
+[soft.html] Found Japanese: トッピング topping
+[waffle&soft.html] Found English: Rice flour gelato
+[waffle&soft.html] Found Japanese: トッピング topping
+[waffle.html] Found English: Rice flour gelato
