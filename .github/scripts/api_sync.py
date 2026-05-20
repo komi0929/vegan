@@ -3,16 +3,15 @@ import json
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone
+import dateutil.parser
 
 # ---------------------------------------------------------
 # CONFIGURATION & SECRETS
 # ---------------------------------------------------------
-# These are pulled from GitHub Actions Secrets
 GOOGLE_API_KEY = os.environ.get('GOOGLE_PLACES_API_KEY')
 GOOGLE_PLACE_ID = os.environ.get('GOOGLE_PLACE_ID')
 INSTAGRAM_TOKEN = os.environ.get('INSTAGRAM_ACCESS_TOKEN')
 
-# File paths (relative to repo root)
 REVIEWS_JSON_PATH = 'data/reviews.json'
 INSTAGRAM_JSON_PATH = 'data/instagram.json'
 
@@ -21,62 +20,72 @@ def fetch_google_reviews():
         print("Skipping Google Reviews: API Key or Place ID not provided.")
         return False
         
-    print("Fetching Google Reviews...")
-    url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={GOOGLE_PLACE_ID}&fields=name,rating,user_ratings_total,reviews&key={GOOGLE_API_KEY}&language=en"
+    print("Fetching Google Reviews using Places API (New)...")
+    url = f"https://places.googleapis.com/v1/places/{GOOGLE_PLACE_ID}"
+    
+    headers = {
+        'X-Goog-Api-Key': GOOGLE_API_KEY,
+        'X-Goog-FieldMask': 'id,displayName,rating,userRatingCount,reviews',
+        'Accept-Language': 'en'
+    }
     
     try:
-        req = urllib.request.Request(url)
+        req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req) as response:
             data = json.loads(response.read().decode())
             
-        if data.get('status') != 'OK':
-            print(f"Google API Error: {data.get('status')}")
-            return False
-            
-        result = data.get('result', {})
-        reviews = result.get('reviews', [])
+        rating = data.get('rating')
+        review_count = data.get('userRatingCount')
+        reviews = data.get('reviews', [])
         
         # Format for our frontend
         formatted_reviews = []
         for r in reviews:
-            # Only include 4 and 5 star reviews for the website
-            if r.get('rating', 0) >= 4:
+            r_rating = r.get('rating', 0)
+            if r_rating >= 4:
+                # Parse the ISO8601 publishTime
+                publish_time = r.get('publishTime', '')
+                try:
+                    # Very basic fallback string splitting if dateutil is not available
+                    date_str = publish_time.split('T')[0] if 'T' in publish_time else publish_time
+                except Exception:
+                    date_str = publish_time
+
+                author = r.get('authorAttribution', {})
+                text_obj = r.get('text', r.get('originalText', {}))
+                
                 formatted_reviews.append({
-                    "id": f"g-{r.get('time')}",
+                    "id": f"g-{r.get('name', '').split('/')[-1]}",
                     "source": "Google",
-                    "author": r.get('author_name'),
-                    "rating": r.get('rating'),
-                    "date": datetime.fromtimestamp(r.get('time')).strftime('%Y-%m-%d'),
+                    "author": author.get('displayName', 'Google User'),
+                    "rating": r_rating,
+                    "date": date_str,
                     "text": {
-                        "en": r.get('text'),
-                        "ko": "", # Optional: Can integrate DeepL API here later
+                        "en": text_obj.get('text', ''),
+                        "ko": "",
                         "zh-cn": "",
                         "zh-tw": ""
                     },
-                    "photoUrl": r.get('profile_photo_url')
+                    "photoUrl": author.get('photoUri')
                 })
         
-        # Load existing reviews to keep HappyCow/manual structure intact, just update Google part
+        # Load existing reviews
         existing_data = {}
         if os.path.exists(REVIEWS_JSON_PATH):
             with open(REVIEWS_JSON_PATH, 'r', encoding='utf-8') as f:
                 existing_data = json.load(f)
                 
-        # Update fields
         existing_data['lastUpdated'] = datetime.now(timezone.utc).isoformat()
         if 'sources' not in existing_data:
             existing_data['sources'] = {}
         if 'google' not in existing_data['sources']:
             existing_data['sources']['google'] = {}
             
-        existing_data['sources']['google']['rating'] = result.get('rating')
-        existing_data['sources']['google']['reviewCount'] = result.get('user_ratings_total')
+        existing_data['sources']['google']['rating'] = rating
+        existing_data['sources']['google']['reviewCount'] = review_count
         
-        # Merge reviews (keep HappyCow, replace Google)
         current_featured = existing_data.get('featured', [])
         kept_reviews = [r for r in current_featured if r.get('source') != 'Google']
-        
-        # Add new top 5 Google reviews
         existing_data['featured'] = kept_reviews + formatted_reviews[:5]
         
         with open(REVIEWS_JSON_PATH, 'w', encoding='utf-8') as f:
@@ -95,7 +104,6 @@ def fetch_instagram_posts():
         return False
         
     print("Fetching Instagram Posts...")
-    # Instagram Graph API or Basic Display API endpoint
     url = f"https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&access_token={INSTAGRAM_TOKEN}&limit=6"
     
     try:
@@ -107,9 +115,7 @@ def fetch_instagram_posts():
         formatted_posts = []
         
         for p in posts:
-            # Use thumbnail for videos, otherwise media_url
             img_url = p.get('thumbnail_url') if p.get('media_type') == 'VIDEO' else p.get('media_url')
-            
             formatted_posts.append({
                 "id": p.get('id'),
                 "imageUrl": img_url,
@@ -124,14 +130,11 @@ def fetch_instagram_posts():
             
         print("Successfully updated Instagram feed!")
         
-        # Note: If using Basic Display API, the token needs to be refreshed every 60 days.
-        # We can trigger the refresh endpoint here as well.
         refresh_url = f"https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token={INSTAGRAM_TOKEN}"
         try:
             urllib.request.urlopen(urllib.request.Request(refresh_url))
             print("Successfully refreshed Instagram access token.")
         except Exception:
-            # Silent fail for refresh, it might just be a non-expiring page token
             pass
             
         return True
