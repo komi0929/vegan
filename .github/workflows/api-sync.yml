@@ -1,6 +1,9 @@
 name: Auto-Sync Instagram and Google Reviews API
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # Run at midnight JST every day (15:00 UTC)
     - cron: '0 15 * * *'
