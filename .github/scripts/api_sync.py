@@ -3,7 +3,6 @@ import json
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone
-import dateutil.parser
 
 # ---------------------------------------------------------
 # CONFIGURATION & SECRETS
@@ -43,10 +42,8 @@ def fetch_google_reviews():
         for r in reviews:
             r_rating = r.get('rating', 0)
             if r_rating >= 4:
-                # Parse the ISO8601 publishTime
                 publish_time = r.get('publishTime', '')
                 try:
-                    # Very basic fallback string splitting if dateutil is not available
                     date_str = publish_time.split('T')[0] if 'T' in publish_time else publish_time
                 except Exception:
                     date_str = publish_time
