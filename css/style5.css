@@ -41,7 +41,9 @@ h1,h2,h3,h4,h5,h6 {
 
 .header__nav-sp {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
 }
 
 .header__button-sp {
@@ -375,11 +377,14 @@ h2 {
 }
 
 .areflexmobile {
-    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .areflexmobile img {
-    width: 40px;
+    width: 32px;
 }
 
 .medium {
@@ -398,20 +403,24 @@ h2 {
 
 .nameflex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 30px;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .textflex {
     border-top: 1px solid #674E3B;
-    margin: 0 10% 20px 10%;
-    padding-top: 10px;
+    margin: 0 5% 20px 5%;
+    padding-top: 15px;
 }
 
 .soytx {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
+    text-align: left;
+    word-break: auto-phrase;
 }
 
 .soy {
