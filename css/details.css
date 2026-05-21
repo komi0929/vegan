@@ -1015,3 +1015,22 @@ main.ice {
     .menu-nav { font-size: 13.5px; }
     .one-nav, .two-nav { min-width: 112px; padding: 0 12px; }
 }
+
+.header__button-sp {
+    flex-shrink: 0;
+    font-size: 11px !important;
+    padding: 4px 8px;
+}
+.allergen-badge {
+    border: 1px solid #6D8059 !important;
+    color: #6D8059 !important;
+    background: transparent !important;
+    border-radius: 4px !important;
+    padding: 2px 8px !important;
+    font-size: 11px !important;
+    display: inline-block;
+}
+.trust-banner__stars {
+    color: #D4AF37 !important; /* Premium Gold */
+    letter-spacing: 2px;
+}

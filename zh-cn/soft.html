@@ -69,74 +69,49 @@
 <header class="header">
 <div class="header__inner inner">
 <h1 class="header__logo">
-<a href="./index.html"><img alt="SoyStories" src="../img/logo_header.png"/></a>
+<a href="../zh-cn/index.html"><img alt="Soy stories" src="../img/logo_header.png"/></a>
 </h1>
 <div class="header__nav-sp">
-<a class="header__button-sp" href="https://soystories.com/" target="_blank">Online Store</a>
-<div class="custom-sp-lang-block" style="margin-top:12px; display:flex; justify-content:center; gap:16px; font-family:sans-serif; font-size:14px; padding-bottom:12px;">
+<a class="header__button-sp" href="https://soystories.com/" target="_blank">オンラインストアはこちら</a>
+<button class="header__open drawer-icon" id="js-drawer-icon" style="margin-left: 12px;">
+<span class="drawer-icon__bar"></span>
+<span class="drawer-icon__bar"></span>
+<span class="drawer-icon__bar"></span>
+</button>
+</div>
+<nav class="header__nav">
+<a class="header__link" href="../zh-cn/index.html#concept">コンセプト</a>
+<a class="header__link" href="../zh-cn/index.html#menu">メニュー</a>
+<a class="header__link" href="../zh-cn/index.html#commitment">当店のこだわり</a>
+<a class="header__link" href="../zh-cn/index.html#qa">Q&amp;A</a>
+<a class="header__link" href="../zh-cn/index.html#access">アクセス</a>
+<div style="display:flex; align-items:center; margin-left:16px; margin-right:16px; gap:8px; font-family:sans-serif; font-size:12px;">
+<a href="../index.html" style="color:#999;">JP</a><span style="color:#ccc;">|</span>
+<a href="../en/index.html" style="color:#999;">EN</a><span style="color:#ccc;">|</span>
+<a href="../ko/index.html" style="color:#999;">KO</a><span style="color:#ccc;">|</span>
+<a href="../zh-tw/index.html" style="color:#999;">繁</a><span style="color:#ccc;">|</span>
+<a href="../zh-cn/index.html" style="color:#7C8A53; font-weight:bold;;">簡</a>
+</div>
+<a class="header__button" href="https://soystories.com/" target="_blank">オンラインストアはこちら</a>
+</nav>
+</div>
+<div class="drawer-content" id="js-drawer-content">
+<nav class="drawer-content__menu">
+<a class="drawer-content__link" href="../zh-cn/index.html#concept">コンセプト</a>
+<a class="drawer-content__link" href="../zh-cn/index.html#menu">メニュー</a>
+<a class="drawer-content__link" href="../zh-cn/index.html#commitment">当店のこだわり</a>
+<a class="drawer-content__link" href="../zh-cn/index.html#qa">Q&amp;A</a>
+<a class="drawer-content__link" href="../zh-cn/index.html#access">アクセス</a>
+<a class="drawer-content__button" href="https://soystories.com/" target="_blank">オンラインストアはこちら</a>
+<div style="margin-top:24px; display:flex; justify-content:center; gap:16px; font-family:sans-serif; font-size:14px; padding-bottom:24px;">
 <a href="../index.html" style="color:#999;">JP</a>
 <a href="../en/index.html" style="color:#999;">EN</a>
 <a href="../ko/index.html" style="color:#999;">KO</a>
 <a href="../zh-tw/index.html" style="color:#999;">繁</a>
-<a href="../zh-cn/index.html" style="color:#7C8A53; font-weight:bold;">簡</a>
-</div>
-</div>
-<nav class="header__nav">
-<style>
-@media(min-width:768px) {
-    .custom-sp-lang-block { display: none !important; }
-}
-@media(max-width:767px) {
-    .custom-pc-lang-block { display: none !important; }
-}
-</style>
-<div class="custom-pc-lang-block" style="display:flex; align-items:center; margin-left:16px; margin-right:16px; gap:8px; font-family:sans-serif; font-size:12px;">
-<a href="../index.html" style="color:#999; transition:color 0.3s;">JP</a><span style="color:#ccc;">|</span>
-<a href="../en/index.html" onmouseout="this.style.color='#999'" onmouseover="this.style.color='#7C8A53'" style="color:#999; transition:color 0.3s;">EN</a><span style="color:#ccc;">|</span>
-<a href="../ko/index.html" onmouseout="this.style.color='#999'" onmouseover="this.style.color='#7C8A53'" style="color:#999; transition:color 0.3s;">KO</a><span style="color:#ccc;">|</span>
-<a href="../zh-tw/index.html" onmouseout="this.style.color='#999'" onmouseover="this.style.color='#7C8A53'" style="color:#999; transition:color 0.3s;">繁</a><span style="color:#ccc;">|</span>
-<a href="../zh-cn/index.html" onmouseout="this.style.color='#999'" onmouseover="this.style.color='#7C8A53'" style="color:#7C8A53; font-weight:bold;">簡</a>
-</div>
-<a class="header__button" href="https://soystories.com/" target="_blank">Online Store</a>
-</nav>
-</div>
-<!-- Menu -->
-<nav class="menu-nav">
-<div class="nav-1">
-<a class="menu-nav-link" href="./waffle&amp;soft.html">
-<div class="one-nav" id="waffle-soft">
-<div class="kind-jp"><div id="kind-jp-waffle-top">Waffle</div>Soft Serve</div>
-<div class="kind-en">Waffle&amp;softcream</div>
-</div>
-</a>
-<a class="menu-nav-link" href="#">
-<div class="one-nav active-menu" id="softcream">
-<div class="kind-jp" id="jp-softcream">Soft Serve</div>
-<div class="kind-en">Softcream</div>
-</div>
-</a>
-</div>
-<div class="nav-2">
-<a class="menu-nav-link" href="./waffle.html">
-<div class="two-nav" id="waffles">
-<div class="kind-jp">Waffle</div>
-<div class="kind-en">Waffle</div>
-</div>
-</a>
-<a class="menu-nav-link" href="./dounuts.html">
-<div class="two-nav" id="donut">
-<div class="kind-jp">Donuts</div>
-<div class="kind-en">Donut</div>
-</div>
-</a>
-<a class="menu-nav-link" href="./ice.html">
-<div class="two-nav" id="icecream">
-<div class="kind-jp">米粉意式冰淇淋</div>
-<div class="kind-en">Rice flour gelato</div>
-</div>
-</a>
+<a href="../zh-cn/index.html" style="color:#7C8A53; font-weight:bold;;">簡</a>
 </div>
 </nav>
+</div>
 </header>
 <!-- MENUタイトル -->
 <div class="title title-softcream"><h2 class="inner"><span>Soft serve ice cream</span><span id="title-sub">Soft Serve</span></h2></div>
@@ -247,5 +222,6 @@
 <div class="copylight">
 <small>© 2024 SoyStories</small>
 </div>
+<script src="../js/script.js"></script>
 </body>
 </html>
