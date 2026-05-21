@@ -87,7 +87,7 @@ h1,h2,h3,h4,h5,h6 {
     padding-bottom: 32px;
     list-style-type: none;
     display: flex;
-    font-size: 13.5px;
+    font-size: 11px;
     margin-top:15px;
 }
 
@@ -97,9 +97,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .one-nav ,.two-nav {
-    min-width: 112px;
     width: auto;
-    padding: 0 12px;
+    padding: 0 4px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -645,4 +644,8 @@ h2 {
     .copylight {
         font-size: 14px;
     }
+}
+@media(min-width:768px){
+    .menu-nav { font-size: 13.5px; }
+    .one-nav, .two-nav { min-width: 112px; padding: 0 12px; }
 }

@@ -1284,3 +1284,7 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 14px;
     }
 }
+@media(min-width:768px){
+    .menu-nav { font-size: 13.5px; }
+    .one-nav, .two-nav { min-width: 112px; padding: 0 12px; }
+}
