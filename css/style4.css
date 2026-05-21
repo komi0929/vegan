@@ -41,7 +41,9 @@ h1,h2,h3,h4,h5,h6 {
 
 .header__nav-sp {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
 }
 
 .header__button-sp {
