@@ -737,6 +737,8 @@ main.donuts {
 
 .donutsimg{
     width: 104px;
+    height: auto;
+    object-fit: contain;
     padding: 8px 0;
 }
 
@@ -817,6 +819,8 @@ main.donuts {
 
     .donutsimg{
         width: 150px;
+        height: auto;
+        object-fit: contain;
         padding: 30px 0;
     }
 }
@@ -1034,3 +1038,111 @@ main.ice {
     color: #D4AF37 !important; /* Premium Gold */
     letter-spacing: 2px;
 }
+
+/* --- Hamburger Drawer Menu Styles (Restored) --- */
+.drawer-icon {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    z-index: 50;
+    border: none;
+    background: transparent;
+}
+
+.drawer-icon.is-checked .drawer-icon__bar {
+    background: #fff;
+}
+
+.drawer-icon.is-checked .drawer-icon__bar:nth-last-of-type(1) {
+    top: 12px;
+    transform: rotate(45deg);
+    color: #fff;
+}
+
+.drawer-icon.is-checked .drawer-icon__bar:nth-last-of-type(2) {
+    display: none;
+}
+
+.drawer-icon.is-checked .drawer-icon__bar:nth-last-of-type(3) {
+    top: 12px;
+    transform: rotate(-45deg);
+    color: #fff;
+}
+
+.drawer-icon__bar {
+    width: 30px;
+    height: 1px;
+    border-radius: 3px;
+    background: #6D8059;
+    position: absolute;
+    left: 0;
+}
+
+.drawer-icon__bar:nth-last-of-type(1) {
+    top: 0;
+}
+
+.drawer-icon__bar:nth-last-of-type(2) {
+    top: 12px;
+}
+
+.drawer-icon__bar:nth-last-of-type(3) {
+    top: 24px;
+}
+
+.drawer-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #6D8059;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
+    transform: translateX(100%);
+    transition: transform 0.3s linear;
+}
+
+.drawer-content.is-checked {
+    transform: translateX(0);
+}
+
+.drawer-content__menu {
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.drawer-content__link {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 8px;
+    margin-top: 32px;
+    text-decoration: none;
+}
+
+.drawer-content__link:hover {
+    opacity: 0.7;
+}
+
+.drawer-content__button {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #6D8059; 
+    width: 200px;
+    height: 24px;
+    display: grid;
+    place-content: center;
+    margin-top: 40px;
+    align-self: center;
+    padding: 3px;
+    transition: opacity 0.3s;
+}
+
+.drawer-content__button:hover {
+    opacity: 0.7;
+}
+
