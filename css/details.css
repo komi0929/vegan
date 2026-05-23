@@ -51,7 +51,9 @@ h1,h2,h3,h4,h5,h6 {
     border: 1px solid #6D8059;
     background: #6D8059;
     color: #fff; 
-    width: 131px;
+    width: auto;
+    white-space: nowrap;
+    padding: 4px 12px;
     height: 24px;
     text-align: center;
     display: grid;
@@ -544,7 +546,8 @@ h2 {
 
     .ws {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         margin: 0;
     }
 
@@ -631,10 +634,11 @@ h2 {
 }
 
 .copylight {
-    color: #674E3B;
-    background: #fff;
+    color: #fff !important;
+    background: #6D8059 !important;
     font-size: 12px;
     text-align: center;
+    padding: 16px 0;
 }
 
 @media (min-width: 768px) {
@@ -653,7 +657,7 @@ h2 {
 .title-donuts { background-image: url(../img/donuts_title.webp); }
 .title-softcream { background-image: url(../img/soft1.webp); }
 .title-icecream { background-image: url(../img/icecream.webp); }
-.title-waffle-soft { background-image: url(../img/waffle_soft_title.webp); }
+.title-waffle-soft { background-image: url(../img/waffle-softcream.png); }
 
 /* Active Menu Item */
 .active-menu { color: #6D8059 !important; font-weight: bold; }
@@ -733,6 +737,7 @@ main.donuts {
 
 .donutsbox{
     text-align: center;
+    padding-bottom: 24px;
 }
 
 .donutsimg{
@@ -908,11 +913,12 @@ main.ice {
 
 .donutsbox {
     text-align: left;
+    padding-bottom: 24px;
 }
 
 .donutsimg {
-    height: 140px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     padding: 8px 0;
 }
 
@@ -999,6 +1005,8 @@ main.ice {
 
     .donutsimg {
         width: 150px;
+        height: auto;
+        object-fit: contain;
         padding: 8px 0;
     }
 }
@@ -1023,7 +1031,32 @@ main.ice {
 .header__button-sp {
     flex-shrink: 0;
     font-size: 11px !important;
-    padding: 4px 8px;
+    padding: 4px 12px;
+    width: auto !important;
+    white-space: nowrap;
+}
+
+/* --- Responsive Image Styles for Detail Pages --- */
+.imgflex img {
+    max-width: 100%;
+    height: auto !important;
+    object-fit: contain;
+    max-height: 320px; /* Prevent oversized image on mobile */
+}
+
+/* Half variant image adjustments */
+.half {
+    height: auto !important;
+    padding-top: 20px !important;
+}
+
+@media (min-width: 768px) {
+    .imgflex img {
+        max-height: 450px; /* Appropriate size on desktop */
+    }
+    .half {
+        padding-top: 30px !important;
+    }
 }
 .allergen-badge {
     border: 1px solid #6D8059 !important;
@@ -1144,5 +1177,20 @@ main.ice {
 
 .drawer-content__button:hover {
     opacity: 0.7;
+}
+
+/* --- Global Footer Copyright Style Override --- */
+.copylight {
+    color: #fff !important;
+    background: #6D8059 !important;
+    font-size: 12px !important;
+    text-align: center !important;
+    padding: 16px 0 !important;
+}
+
+@media (min-width: 768px) {
+    .copylight {
+        font-size: 14px !important;
+    }
 }
 
