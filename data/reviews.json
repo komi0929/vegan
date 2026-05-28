@@ -27,7 +27,8 @@
         "zh-cn": "在整个日本吃过最好的纯素甜点。豆奶冰淇淋的丝滑口感令人难以置信——旅途中我去了三次！",
         "zh-tw": "在整個日本吃過最好的純素甜點。豆奶冰淇淋的絲滑口感令人難以置信——旅途中我去了三次！"
       },
-      "photoUrl": null
+      "photoUrl": null,
+      "reviewPhotoUrl": "img/waffle_plain.png"
     },
     {
       "id": "hc-002",
@@ -43,7 +44,8 @@
         "zh-cn": "作为一个有乳糜泻的人，在日本旅行很可怕。SoyStories是我的避风港。甜甜圈太棒了。",
         "zh-tw": "作為一個有乳糜瀉的人，在日本旅行很可怕。SoyStories是我的避風港。甜甜圈太棒了。"
       },
-      "photoUrl": null
+      "photoUrl": null,
+      "reviewPhotoUrl": "img/donuts_title.webp"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2tOdWMxVkNOMGM0Y1VaVFZFUmhOWEJHVm1SVFYzYxAB",
@@ -57,7 +59,8 @@
         "zh-cn": "",
         "zh-tw": ""
       },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWT4vquGhpJGSFMxhrNMwKluVkKoUG3pIE-sXzW14-0u2duxg0DGg=s128-c0x00000000-cc-rp-mo-ba4"
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWT4vquGhpJGSFMxhrNMwKluVkKoUG3pIE-sXzW14-0u2duxg0DGg=s128-c0x00000000-cc-rp-mo-ba4",
+      "reviewPhotoUrl": "img/ice_berry-mix.png"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21oWVRYUlBPRmROUjNZNGVHVnlkVXRxUkdsRU1WRRAB",
@@ -71,7 +74,8 @@
         "zh-cn": "",
         "zh-tw": ""
       },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXgf7aEJ7DRgfyU3kD6-8FlXnYg486c4bF1vfghfmiJB9G7ac0=s128-c0x00000000-cc-rp-mo-ba4"
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXgf7aEJ7DRgfyU3kD6-8FlXnYg486c4bF1vfghfmiJB9G7ac0=s128-c0x00000000-cc-rp-mo-ba4",
+      "reviewPhotoUrl": "img/waffle2.webp"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2s5Vk0wWktUVVZ3YjI5a1l6SnhkMkpCVERKbVEwRRAB",
@@ -85,7 +89,8 @@
         "zh-cn": "",
         "zh-tw": ""
       },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXfCqoKw1peS6XNmHxmyUHbI8PNfTRR_K-F8VRjdvq8E1kMBdpU=s128-c0x00000000-cc-rp-mo"
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXfCqoKw1peS6XNmHxmyUHbI8PNfTRR_K-F8VRjdvq8E1kMBdpU=s128-c0x00000000-cc-rp-mo",
+      "reviewPhotoUrl": "img/donuts_matcha.png"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2pWdVJGUmZlRXgxUmpkUkxXaGpkVWhyWTA1alYyYxAB",
@@ -99,7 +104,8 @@
         "zh-cn": "",
         "zh-tw": ""
       },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWkQPBvmInFxJHInQYujjrU6p-rknCyF2hyW9qMpxW9a6LcRTBQ=s128-c0x00000000-cc-rp-mo-ba6"
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWkQPBvmInFxJHInQYujjrU6p-rknCyF2hyW9qMpxW9a6LcRTBQ=s128-c0x00000000-cc-rp-mo-ba6",
+      "reviewPhotoUrl": "img/ice_vanilla-coconut.png"
     },
     {
       "id": "g-ChdDSUhNMG9nS0VJQ0FnTUNnaGZ2d3NnRRAB",
@@ -113,7 +119,8 @@
         "zh-cn": "",
         "zh-tw": ""
       },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUiuvSY0wiw3Cg5_UyGM0s75x7IfaQnjPBLS5ZPwiL1cW1uBML0=s128-c0x00000000-cc-rp-mo-ba4"
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUiuvSY0wiw3Cg5_UyGM0s75x7IfaQnjPBLS5ZPwiL1cW1uBML0=s128-c0x00000000-cc-rp-mo-ba4",
+      "reviewPhotoUrl": "img/waffle_cocoa.png"
     }
   ]
 }

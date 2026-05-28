@@ -137,7 +137,18 @@
     }
   };
 
-  function t(key) {
+  // ============================================
+  // PATH RESOLVER
+  // ============================================
+  function resolveImgPath(path) {
+    if (!path) return '';
+    var p = window.location.pathname;
+    if (p.includes('/en/') || p.includes('/ko/') || p.includes('/zh-cn/') || p.includes('/zh-tw/') || p.includes('/soystories/')) {
+      return '../' + path;
+    }
+    return './' + path;
+  }
+\n  function t(key) {
     return (I18N[LANG] || I18N['en'])[key] || I18N['en'][key] || key;
   }
 
@@ -200,6 +211,7 @@
         '<div class="live-review__source-badge">' + (review.source || 'Google') + '</div>' +
       '</div>' +
       '<div class="live-review__stars">' + renderStars(review.rating || 5) + '</div>' +
+      (review.reviewPhotoUrl ? '<img class="live-review__photo" src="' + resolveImgPath(review.reviewPhotoUrl) + '" alt="Review food photo" loading="lazy">' : '') +
       '<p class="live-review__text">"' + text + '"</p>' +
       '<span class="live-review__date">' + ago + '</span>' +
     '</div>';
