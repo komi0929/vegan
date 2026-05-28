@@ -182,17 +182,17 @@
   // ============================================
   function buildReviewCard(review) {
     const text = (typeof review.text === 'object')
-      ? (review.text[LANG] || review.text['en'] || Object.values(review.text)[0])
+      ? (review.text[LANG] || '')
       : review.text;
     const flag = countryFlag(review.countryCode);
     const ago = review.date ? timeAgo(review.date) : '';
-    const photo = review.photoUrl
-      ? '<img class="live-review__photo" src="' + review.photoUrl + '" alt="Review photo">'
-      : '';
+    const avatarContent = review.photoUrl
+      ? '<img class="live-review__author-img" src="' + review.photoUrl + '" alt="Avatar">'
+      : countryFlag(review.countryCode);
 
     return '<div class="live-review__card">' +
       '<div class="live-review__header">' +
-        '<div class="live-review__avatar">' + flag + '</div>' +
+        '<div class="live-review__avatar">' + avatarContent + '</div>' +
         '<div class="live-review__meta">' +
           '<span class="live-review__author">' + (review.author || 'Traveler') + '</span>' +
           '<span class="live-review__origin">' + (review.country || '') + '</span>' +
@@ -200,7 +200,6 @@
         '<div class="live-review__source-badge">' + (review.source || 'Google') + '</div>' +
       '</div>' +
       '<div class="live-review__stars">' + renderStars(review.rating || 5) + '</div>' +
-      photo +
       '<p class="live-review__text">"' + text + '"</p>' +
       '<span class="live-review__date">' + ago + '</span>' +
     '</div>';
@@ -496,6 +495,15 @@
           var seen = {};
           var unique = [];
           merged.forEach(function (r) {
+            // Strict language filtering (Option B)
+            var textVal = '';
+            if (typeof r.text === 'object') {
+              textVal = r.text[LANG] || '';
+            } else {
+              textVal = r.text || '';
+            }
+            if (!textVal || textVal.trim() === '') return;
+            
             var key = (r.id || r.author || '') + r.source;
             if (!seen[key]) { seen[key] = true; unique.push(r); }
           });
@@ -510,7 +518,11 @@
         // Fallback: use JSON data
         fetchJsonReviews()
           .then(function (data) {
-            renderLiveSection(data.reviews, data);
+            var filtered = data.reviews.filter(function(r) {
+              var textVal = (typeof r.text === 'object') ? (r.text[LANG] || '') : (r.text || '');
+              return textVal.trim() !== '';
+            });
+            renderLiveSection(filtered, data);
           })
           .catch(function (err) {
             console.warn('SoyStories Live Content: Could not load reviews', err);
