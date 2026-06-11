@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T17:53:23.006465+00:00",
+  "lastUpdated": "2026-06-11T18:08:39.330310+00:00",
   "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
   "sources": {
     "happycow": {
@@ -46,6 +46,20 @@
       },
       "photoUrl": null,
       "reviewPhotoUrl": "img/donuts_title.webp"
+    },
+    {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT214dlFrdzVNSFI2Tkc1RU5scG9ZVEZxV2w5dVQzYxAB",
+      "source": "Google",
+      "author": "Jodi Clay",
+      "rating": 5,
+      "date": "2026-04-13",
+      "text": {
+        "en": "Oh this was such an AMAZING TREAT!!! I have celiac and came here with my husband and son who are not. We all enjoyed the bubble waffles, soy ice cream, dorayaki & donuts ALOT!!!! You would never know the ice cream was dairy free with how creamy it was & the flavors were outstanding. The black sesame was a big hit but the strawberry and chocolate also delivered big on flavor. We are only in Fukuoka for 2 days but we are tempted to go again before we leave. It's that good! Worth the taxi ride for sure!",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUNGsZncDcXLbtjtv2ZfiTohAs_vNVdAU_BivMA5LERtw5z9Ldb=s128-c0x00000000-cc-rp-mo-ba3"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2tOdWMxVkNOMGM0Y1VaVFZFUmhOWEJHVm1SVFYzYxAB",
@@ -102,20 +116,6 @@
         "zh-tw": ""
       },
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWkQPBvmInFxJHInQYujjrU6p-rknCyF2hyW9qMpxW9a6LcRTBQ=s128-c0x00000000-cc-rp-mo-ba6"
-    },
-    {
-      "id": "g-ChdDSUhNMG9nS0VJQ0FnTUNnaGZ2d3NnRRAB",
-      "source": "Google",
-      "author": "ffu66",
-      "rating": 5,
-      "date": "2025-02-19",
-      "text": {
-        "en": "Large ice cream with waffle was amazing. Anyone lactose and celiac allergy will immediately love this place as it is hard to come by desserts - especially ice cream with lactose allergies.\n\nThe donut was ok. They were kind to reheat the donut, but they aren't made fresh like the ice cream and the waffle. I recommend going big with the ice cream with waffles.\n\nI love how it comes with all different sorts of toppings one can add. It was delicious.\n\nThere is no toilet, but there is a place to sit and enjoy the dessert.",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUiuvSY0wiw3Cg5_UyGM0s75x7IfaQnjPBLS5ZPwiL1cW1uBML0=s128-c0x00000000-cc-rp-mo-ba4"
     }
   ]
 }
