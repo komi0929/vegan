@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T17:56:22.858829+00:00",
+  "lastUpdated": "2026-06-19T17:12:20.871194+00:00",
   "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
   "sources": {
     "happycow": {
@@ -76,20 +76,6 @@
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9JURFRBO1r8jtShyKasFhZIpl18bdMbAref_FhkLuNnjYrMY=s128-c0x00000000-cc-rp-mo-ba6"
     },
     {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2kxclkzUlNhbWMwUVhKWlVGQTBRMU5HTkVKSVdGRRAB",
-      "source": "Google",
-      "author": "Poonam Parekh",
-      "rating": 5,
-      "date": "2026-03-12",
-      "text": {
-        "en": "This place is heaven for gluten intolerant and vegan people. You cant makeout the difference that icecream is made out of Soy milk. Icecream is delicious and waffles are to die for. I had the macha icecream with waffle twice…Couldn’t stop myself from eating. Must visit this place ❤️\nOwner also served free icecream tasters and Free toppings 😇\nAmbience is very calm and friendly 🤗",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUpgFETufSmENoRJgEn45LXLAEAR3Y5pKELKlqZR9Be0R6SIhqn=s128-c0x00000000-cc-rp-mo"
-    },
-    {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2tOdWMxVkNOMGM0Y1VaVFZFUmhOWEJHVm1SVFYzYxAB",
       "source": "Google",
       "author": "Livia Chan",
@@ -102,6 +88,20 @@
         "zh-tw": ""
       },
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWT4vquGhpJGSFMxhrNMwKluVkKoUG3pIE-sXzW14-0u2duxg0DGg=s128-c0x00000000-cc-rp-mo-ba4"
+    },
+    {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2kxclkzUlNhbWMwUVhKWlVGQTBRMU5HTkVKSVdGRRAB",
+      "source": "Google",
+      "author": "Poonam Parekh",
+      "rating": 5,
+      "date": "2026-03-12",
+      "text": {
+        "en": "This place is heaven for gluten intolerant and vegan people. You cant makeout the difference that icecream is made out of Soy milk. Icecream is delicious and waffles are to die for. I had the macha icecream with waffle twice…Couldn’t stop myself from eating. Must visit this place ❤️\nOwner also served free icecream tasters and Free toppings 😇\nAmbience is very calm and friendly 🤗",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUpgFETufSmENoRJgEn45LXLAEAR3Y5pKELKlqZR9Be0R6SIhqn=s128-c0x00000000-cc-rp-mo"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21oWVRYUlBPRmROUjNZNGVHVnlkVXRxUkdsRU1WRRAB",
