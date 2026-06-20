@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T17:12:20.871194+00:00",
+  "lastUpdated": "2026-06-20T16:13:04.010890+00:00",
   "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
   "sources": {
     "happycow": {
@@ -9,7 +9,7 @@
     },
     "google": {
       "rating": 4.7,
-      "reviewCount": 203
+      "reviewCount": 204
     }
   },
   "featured": [
@@ -76,20 +76,6 @@
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9JURFRBO1r8jtShyKasFhZIpl18bdMbAref_FhkLuNnjYrMY=s128-c0x00000000-cc-rp-mo-ba6"
     },
     {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2tOdWMxVkNOMGM0Y1VaVFZFUmhOWEJHVm1SVFYzYxAB",
-      "source": "Google",
-      "author": "Livia Chan",
-      "rating": 5,
-      "date": "2025-10-15",
-      "text": {
-        "en": "Ice cream texture was nice, and since I got the original flavor, it tasted exactly like soy milk (which I love!) They provided various toppings such as chocolate, matcha, hojicha, etc for you to eat with and it was really nice. The waffle too surprisingly amazing, super light yet fluffy, perfect with the ice cream!\n\nI ordered a donut and dorayaki to go, the dorayaki has ice cream inside and I got the strawberry one, it was SOOOO GOOOODDD... Would love to come back honestly and try their other ice cream flavors!!",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWT4vquGhpJGSFMxhrNMwKluVkKoUG3pIE-sXzW14-0u2duxg0DGg=s128-c0x00000000-cc-rp-mo-ba4"
-    },
-    {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2kxclkzUlNhbWMwUVhKWlVGQTBRMU5HTkVKSVdGRRAB",
       "source": "Google",
       "author": "Poonam Parekh",
@@ -102,6 +88,20 @@
         "zh-tw": ""
       },
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUpgFETufSmENoRJgEn45LXLAEAR3Y5pKELKlqZR9Be0R6SIhqn=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2tOdWMxVkNOMGM0Y1VaVFZFUmhOWEJHVm1SVFYzYxAB",
+      "source": "Google",
+      "author": "Livia Chan",
+      "rating": 5,
+      "date": "2025-10-15",
+      "text": {
+        "en": "Ice cream texture was nice, and since I got the original flavor, it tasted exactly like soy milk (which I love!) They provided various toppings such as chocolate, matcha, hojicha, etc for you to eat with and it was really nice. The waffle too surprisingly amazing, super light yet fluffy, perfect with the ice cream!\n\nI ordered a donut and dorayaki to go, the dorayaki has ice cream inside and I got the strawberry one, it was SOOOO GOOOODDD... Would love to come back honestly and try their other ice cream flavors!!",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWT4vquGhpJGSFMxhrNMwKluVkKoUG3pIE-sXzW14-0u2duxg0DGg=s128-c0x00000000-cc-rp-mo-ba4"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21oWVRYUlBPRmROUjNZNGVHVnlkVXRxUkdsRU1WRRAB",
