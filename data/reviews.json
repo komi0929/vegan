@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26T20:14:13.726955+00:00",
+  "lastUpdated": "2026-10-27T19:46:01.307749+00:00",
   "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
   "sources": {
     "happycow": {
@@ -46,20 +46,6 @@
       },
       "photoUrl": null,
       "reviewPhotoUrl": "img/donuts_title.webp"
-    },
-    {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21sa2RERmphMGRrY2xRNFVUVmljMUJ6U3pCSk1YYxAB",
-      "source": "Google",
-      "author": "Traveling Sky",
-      "rating": 5,
-      "date": "2026-03-24",
-      "text": {
-        "en": "Excelent soft serve soy icecream with crispy waffle, ordered large with a coffee on the side to complement. This is not your typical western bland soy flavored ice-cream. This place takes it to another level.\nVery flavorful and delicious texture coupled with the crispy made to order waffle, I felt I was in heaven. Then to top it off they give you a tray of varies toppings to try.\n\nOrdered two donuts to go a strawberry 🍓 and mint flavor have not tried yet but will do latter with some green sencha tea.\n\nThe lady behind the counter did speak English,  she was a sweethart.\n\nDefinitely will come here again before I leave the area!",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9JURFRBO1r8jtShyKasFhZIpl18bdMbAref_FhkLuNnjYrMY=s128-c0x00000000-cc-rp-mo-ba6"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT214dlFrdzVNSFI2Tkc1RU5scG9ZVEZxV2w5dVQzYxAB",
@@ -116,6 +102,20 @@
         "zh-tw": ""
       },
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnwmv2qbkWelVxVLc0Wp2uO6SnWgJ1xw8c--a8aSUhIRTzj4Qm=s128-c0x00000000-cc-rp-mo-ba3"
+    },
+    {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21sa2RERmphMGRrY2xRNFVUVmljMUJ6U3pCSk1YYxAB",
+      "source": "Google",
+      "author": "Traveling Sky",
+      "rating": 5,
+      "date": "2026-03-24",
+      "text": {
+        "en": "Excelent soft serve soy icecream with crispy waffle, ordered large with a coffee on the side to complement. This is not your typical western bland soy flavored ice-cream. This place takes it to another level.\nVery flavorful and delicious texture coupled with the crispy made to order waffle, I felt I was in heaven. Then to top it off they give you a tray of varies toppings to try.\n\nOrdered two donuts to go a strawberry 🍓 and mint flavor have not tried yet but will do latter with some green sencha tea.\n\nThe lady behind the counter did speak English,  she was a sweethart.\n\nDefinitely will come here again before I leave the area!",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9JURFRBO1r8jtShyKasFhZIpl18bdMbAref_FhkLuNnjYrMY=s128-c0x00000000-cc-rp-mo-ba6"
     }
   ]
 }
