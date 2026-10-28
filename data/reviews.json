@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-27T19:46:01.307749+00:00",
+  "lastUpdated": "2026-10-28T20:00:12.513470+00:00",
   "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
   "sources": {
     "happycow": {
@@ -9,7 +9,7 @@
     },
     "google": {
       "rating": 4.7,
-      "reviewCount": 256
+      "reviewCount": 257
     }
   },
   "featured": [
@@ -48,20 +48,6 @@
       "reviewPhotoUrl": "img/donuts_title.webp"
     },
     {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT214dlFrdzVNSFI2Tkc1RU5scG9ZVEZxV2w5dVQzYxAB",
-      "source": "Google",
-      "author": "Jodi Clay",
-      "rating": 5,
-      "date": "2026-04-13",
-      "text": {
-        "en": "Oh this was such an AMAZING TREAT!!! I have celiac and came here with my husband and son who are not. We all enjoyed the bubble waffles, soy ice cream, dorayaki & donuts ALOT!!!! You would never know the ice cream was dairy free with how creamy it was & the flavors were outstanding. The black sesame was a big hit but the strawberry and chocolate also delivered big on flavor. We are only in Fukuoka for 2 days but we are tempted to go again before we leave. It's that good! Worth the taxi ride for sure!",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUNGsZncDcXLbtjtv2ZfiTohAs_vNVdAU_BivMA5LERtw5z9Ldb=s128-c0x00000000-cc-rp-mo-ba3"
-    },
-    {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT25OTFRsUTFaVlJ0YzNWa2FtODFRWEl4WXpoc1RVRRAB",
       "source": "Google",
       "author": "Glen Hansman",
@@ -74,6 +60,20 @@
         "zh-tw": ""
       },
       "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKf-MO9to43L3O-tx9o1sPMlZftmlF81eMiEosiQcJ0gytTllE=s128-c0x00000000-cc-rp-mo-ba3"
+    },
+    {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT214dlFrdzVNSFI2Tkc1RU5scG9ZVEZxV2w5dVQzYxAB",
+      "source": "Google",
+      "author": "Jodi Clay",
+      "rating": 5,
+      "date": "2026-04-13",
+      "text": {
+        "en": "Oh this was such an AMAZING TREAT!!! I have celiac and came here with my husband and son who are not. We all enjoyed the bubble waffles, soy ice cream, dorayaki & donuts ALOT!!!! You would never know the ice cream was dairy free with how creamy it was & the flavors were outstanding. The black sesame was a big hit but the strawberry and chocolate also delivered big on flavor. We are only in Fukuoka for 2 days but we are tempted to go again before we leave. It's that good! Worth the taxi ride for sure!",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUNGsZncDcXLbtjtv2ZfiTohAs_vNVdAU_BivMA5LERtw5z9Ldb=s128-c0x00000000-cc-rp-mo-ba3"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT25OMExXNUlkMkprTFZFM01FWklSMnRPTWpWNExXYxAB",
