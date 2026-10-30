@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-29T19:59:41.212874+00:00",
+  "lastUpdated": "2026-10-30T19:47:43.717520+00:00",
   "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
   "sources": {
     "happycow": {
@@ -9,7 +9,7 @@
     },
     "google": {
       "rating": 4.7,
-      "reviewCount": 259
+      "reviewCount": 260
     }
   },
   "featured": [
@@ -48,20 +48,6 @@
       "reviewPhotoUrl": "img/donuts_title.webp"
     },
     {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT25OTFRsUTFaVlJ0YzNWa2FtODFRWEl4WXpoc1RVRRAB",
-      "source": "Google",
-      "author": "Glen Hansman",
-      "rating": 5,
-      "date": "2026-08-11",
-      "text": {
-        "en": "If you are looking for an incredible sweet treat, this plant-based and gluten-free cafe is absolutely worth seeking out! They specialize in soy milk and rice flour sweets that taste completely indulgent.Whether you follow a strict vegan diet or just love a good dessert, you will absolutely fall in love with their waffles and ice cream combinations. The waffle and pure soy milk soft serve is particularly delicious, offering the perfect balance of warmth and creaminess. On top of the amazing food, ordering is a breeze thanks to their convenient English menu. They also have great takeout options if you want to enjoy your treats on the go. The staff here is incredibly courteous and helpful, making the whole experience even better!",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKf-MO9to43L3O-tx9o1sPMlZftmlF81eMiEosiQcJ0gytTllE=s128-c0x00000000-cc-rp-mo-ba3"
-    },
-    {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT214dlFrdzVNSFI2Tkc1RU5scG9ZVEZxV2w5dVQzYxAB",
       "source": "Google",
       "author": "Jodi Clay",
@@ -74,6 +60,20 @@
         "zh-tw": ""
       },
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUNGsZncDcXLbtjtv2ZfiTohAs_vNVdAU_BivMA5LERtw5z9Ldb=s128-c0x00000000-cc-rp-mo-ba3"
+    },
+    {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT25OTFRsUTFaVlJ0YzNWa2FtODFRWEl4WXpoc1RVRRAB",
+      "source": "Google",
+      "author": "Glen Hansman",
+      "rating": 5,
+      "date": "2026-08-11",
+      "text": {
+        "en": "If you are looking for an incredible sweet treat, this plant-based and gluten-free cafe is absolutely worth seeking out! They specialize in soy milk and rice flour sweets that taste completely indulgent.Whether you follow a strict vegan diet or just love a good dessert, you will absolutely fall in love with their waffles and ice cream combinations. The waffle and pure soy milk soft serve is particularly delicious, offering the perfect balance of warmth and creaminess. On top of the amazing food, ordering is a breeze thanks to their convenient English menu. They also have great takeout options if you want to enjoy your treats on the go. The staff here is incredibly courteous and helpful, making the whole experience even better!",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKf-MO9to43L3O-tx9o1sPMlZftmlF81eMiEosiQcJ0gytTllE=s128-c0x00000000-cc-rp-mo-ba3"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT25OMExXNUlkMkprTFZFM01FWklSMnRPTWpWNExXYxAB",
@@ -90,20 +90,6 @@
       "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJUnW9MAQwMzrqmsmqh6JjZyWYp5VrNMc6TnaCFC_w80beVfrlN=s128-c0x00000000-cc-rp-mo-ba2"
     },
     {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21VMGIySnNUM2RoTkRaRFNqRk1OV0ZFWDNvM09XYxAB",
-      "source": "Google",
-      "author": "Dominik Jersabeck",
-      "rating": 5,
-      "date": "2026-06-14",
-      "text": {
-        "en": "I dare you to find an item on the menu that's not absolutely delicious. This was the best dessert place I've visited in Japan. The mission of Soy Stories is to allow people with allergies and special diets to experience sweet treats and they tirelessly do exactly that. It was such a pleasure being able to get vegan desserts after a late dinner. Arigatou gozaimasu, Soy Stories – we will definitely come back!",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnwmv2qbkWelVxVLc0Wp2uO6SnWgJ1xw8c--a8aSUhIRTzj4Qm=s128-c0x00000000-cc-rp-mo-ba3"
-    },
-    {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21sa2RERmphMGRrY2xRNFVUVmljMUJ6U3pCSk1YYxAB",
       "source": "Google",
       "author": "Traveling Sky",
@@ -116,6 +102,20 @@
         "zh-tw": ""
       },
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9JURFRBO1r8jtShyKasFhZIpl18bdMbAref_FhkLuNnjYrMY=s128-c0x00000000-cc-rp-mo-ba6"
+    },
+    {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21VMGIySnNUM2RoTkRaRFNqRk1OV0ZFWDNvM09XYxAB",
+      "source": "Google",
+      "author": "Dominik Jersabeck",
+      "rating": 5,
+      "date": "2026-06-14",
+      "text": {
+        "en": "I dare you to find an item on the menu that's not absolutely delicious. This was the best dessert place I've visited in Japan. The mission of Soy Stories is to allow people with allergies and special diets to experience sweet treats and they tirelessly do exactly that. It was such a pleasure being able to get vegan desserts after a late dinner. Arigatou gozaimasu, Soy Stories – we will definitely come back!",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnwmv2qbkWelVxVLc0Wp2uO6SnWgJ1xw8c--a8aSUhIRTzj4Qm=s128-c0x00000000-cc-rp-mo-ba3"
     }
   ]
 }
