@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-01T19:17:37.209727+00:00",
+  "lastUpdated": "2026-11-02T22:57:09.668287+00:00",
   "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
   "sources": {
     "happycow": {
@@ -76,20 +76,6 @@
       "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKf-MO9to43L3O-tx9o1sPMlZftmlF81eMiEosiQcJ0gytTllE=s128-c0x00000000-cc-rp-mo-ba3"
     },
     {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT25OMExXNUlkMkprTFZFM01FWklSMnRPTWpWNExXYxAB",
-      "source": "Google",
-      "author": "Nora",
-      "rating": 5,
-      "date": "2026-08-04",
-      "text": {
-        "en": "Amazing vegan bubble waffles! Fresh, delicious, and perfectly crispy. The man working there was also incredibly kind and welcoming, which made the experience even better.\n\nI would definitely come back!",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJUnW9MAQwMzrqmsmqh6JjZyWYp5VrNMc6TnaCFC_w80beVfrlN=s128-c0x00000000-cc-rp-mo-ba2"
-    },
-    {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21sa2RERmphMGRrY2xRNFVUVmljMUJ6U3pCSk1YYxAB",
       "source": "Google",
       "author": "Traveling Sky",
@@ -116,6 +102,20 @@
         "zh-tw": ""
       },
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnwmv2qbkWelVxVLc0Wp2uO6SnWgJ1xw8c--a8aSUhIRTzj4Qm=s128-c0x00000000-cc-rp-mo-ba3"
+    },
+    {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2kxclkzUlNhbWMwUVhKWlVGQTBRMU5HTkVKSVdGRRAB",
+      "source": "Google",
+      "author": "Poonam Parekh",
+      "rating": 5,
+      "date": "2026-03-12",
+      "text": {
+        "en": "This place is heaven for gluten intolerant and vegan people. You cant makeout the difference that icecream is made out of Soy milk. Icecream is delicious and waffles are to die for. I had the macha icecream with waffle twice…Couldn’t stop myself from eating. Must visit this place ❤️\nOwner also served free icecream tasters and Free toppings 😇\nAmbience is very calm and friendly 🤗",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUpgFETufSmENoRJgEn45LXLAEAR3Y5pKELKlqZR9Be0R6SIhqn=s128-c0x00000000-cc-rp-mo"
     }
   ]
 }
