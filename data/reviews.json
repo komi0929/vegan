@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T22:57:09.668287+00:00",
+  "lastUpdated": "2026-11-03T20:43:07.932893+00:00",
   "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
   "sources": {
     "happycow": {
@@ -9,7 +9,7 @@
     },
     "google": {
       "rating": 4.7,
-      "reviewCount": 262
+      "reviewCount": 264
     }
   },
   "featured": [
@@ -48,20 +48,6 @@
       "reviewPhotoUrl": "img/donuts_title.webp"
     },
     {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT214dlFrdzVNSFI2Tkc1RU5scG9ZVEZxV2w5dVQzYxAB",
-      "source": "Google",
-      "author": "Jodi Clay",
-      "rating": 5,
-      "date": "2026-04-13",
-      "text": {
-        "en": "Oh this was such an AMAZING TREAT!!! I have celiac and came here with my husband and son who are not. We all enjoyed the bubble waffles, soy ice cream, dorayaki & donuts ALOT!!!! You would never know the ice cream was dairy free with how creamy it was & the flavors were outstanding. The black sesame was a big hit but the strawberry and chocolate also delivered big on flavor. We are only in Fukuoka for 2 days but we are tempted to go again before we leave. It's that good! Worth the taxi ride for sure!",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUNGsZncDcXLbtjtv2ZfiTohAs_vNVdAU_BivMA5LERtw5z9Ldb=s128-c0x00000000-cc-rp-mo-ba3"
-    },
-    {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT25OTFRsUTFaVlJ0YzNWa2FtODFRWEl4WXpoc1RVRRAB",
       "source": "Google",
       "author": "Glen Hansman",
@@ -76,18 +62,32 @@
       "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKf-MO9to43L3O-tx9o1sPMlZftmlF81eMiEosiQcJ0gytTllE=s128-c0x00000000-cc-rp-mo-ba3"
     },
     {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21sa2RERmphMGRrY2xRNFVUVmljMUJ6U3pCSk1YYxAB",
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2pkVmNEUlZha3BxTFVkdGJEbFVkR1ZHT1ZWUlNYYxAB",
       "source": "Google",
-      "author": "Traveling Sky",
+      "author": "Juhee Yu",
       "rating": 5,
-      "date": "2026-03-24",
+      "date": "2026-08-26",
       "text": {
-        "en": "Excelent soft serve soy icecream with crispy waffle, ordered large with a coffee on the side to complement. This is not your typical western bland soy flavored ice-cream. This place takes it to another level.\nVery flavorful and delicious texture coupled with the crispy made to order waffle, I felt I was in heaven. Then to top it off they give you a tray of varies toppings to try.\n\nOrdered two donuts to go a strawberry 🍓 and mint flavor have not tried yet but will do latter with some green sencha tea.\n\nThe lady behind the counter did speak English,  she was a sweethart.\n\nDefinitely will come here again before I leave the area!",
+        "en": "This place is such a treat to people who is vegan and want healthy - sweet dessert.\nI was so grateful for their purpose 'To give form to the happiness of eating together' Because that was what I was craving as vegan. To have togetherness.\n\nI had gluten free, Sugar free, Gluten free dessert here and It was so flavorful, Chewy and yumemitai!\nIce cream tasted like mildly sweet, soft, mid tofu soy taste which I adored it.\nHonestly that bread that covers the soft icecream is a gem because it is so crispy but gooey and soft inside that it has such a harmony.\n\nI highly recommend it!!! 🪽🧑‍🩰\n\n* I asked for sustainable fork instead of plastic!",
         "ko": "",
         "zh-cn": "",
         "zh-tw": ""
       },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9JURFRBO1r8jtShyKasFhZIpl18bdMbAref_FhkLuNnjYrMY=s128-c0x00000000-cc-rp-mo-ba6"
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVQaPHDC6jKTIdSndUzk5FcHPmnGZHMUT8QDHIqpc6U8n7q-nyy=s128-c0x00000000-cc-rp-mo-ba3"
+    },
+    {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT214dlFrdzVNSFI2Tkc1RU5scG9ZVEZxV2w5dVQzYxAB",
+      "source": "Google",
+      "author": "Jodi Clay",
+      "rating": 5,
+      "date": "2026-04-13",
+      "text": {
+        "en": "Oh this was such an AMAZING TREAT!!! I have celiac and came here with my husband and son who are not. We all enjoyed the bubble waffles, soy ice cream, dorayaki & donuts ALOT!!!! You would never know the ice cream was dairy free with how creamy it was & the flavors were outstanding. The black sesame was a big hit but the strawberry and chocolate also delivered big on flavor. We are only in Fukuoka for 2 days but we are tempted to go again before we leave. It's that good! Worth the taxi ride for sure!",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUNGsZncDcXLbtjtv2ZfiTohAs_vNVdAU_BivMA5LERtw5z9Ldb=s128-c0x00000000-cc-rp-mo-ba3"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21VMGIySnNUM2RoTkRaRFNqRk1OV0ZFWDNvM09XYxAB",
@@ -104,18 +104,18 @@
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnwmv2qbkWelVxVLc0Wp2uO6SnWgJ1xw8c--a8aSUhIRTzj4Qm=s128-c0x00000000-cc-rp-mo-ba3"
     },
     {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2kxclkzUlNhbWMwUVhKWlVGQTBRMU5HTkVKSVdGRRAB",
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21sa2RERmphMGRrY2xRNFVUVmljMUJ6U3pCSk1YYxAB",
       "source": "Google",
-      "author": "Poonam Parekh",
+      "author": "Traveling Sky",
       "rating": 5,
-      "date": "2026-03-12",
+      "date": "2026-03-24",
       "text": {
-        "en": "This place is heaven for gluten intolerant and vegan people. You cant makeout the difference that icecream is made out of Soy milk. Icecream is delicious and waffles are to die for. I had the macha icecream with waffle twice…Couldn’t stop myself from eating. Must visit this place ❤️\nOwner also served free icecream tasters and Free toppings 😇\nAmbience is very calm and friendly 🤗",
+        "en": "Excelent soft serve soy icecream with crispy waffle, ordered large with a coffee on the side to complement. This is not your typical western bland soy flavored ice-cream. This place takes it to another level.\nVery flavorful and delicious texture coupled with the crispy made to order waffle, I felt I was in heaven. Then to top it off they give you a tray of varies toppings to try.\n\nOrdered two donuts to go a strawberry 🍓 and mint flavor have not tried yet but will do latter with some green sencha tea.\n\nThe lady behind the counter did speak English,  she was a sweethart.\n\nDefinitely will come here again before I leave the area!",
         "ko": "",
         "zh-cn": "",
         "zh-tw": ""
       },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUpgFETufSmENoRJgEn45LXLAEAR3Y5pKELKlqZR9Be0R6SIhqn=s128-c0x00000000-cc-rp-mo"
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9JURFRBO1r8jtShyKasFhZIpl18bdMbAref_FhkLuNnjYrMY=s128-c0x00000000-cc-rp-mo-ba6"
     }
   ]
 }
