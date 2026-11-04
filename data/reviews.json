@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T20:43:07.932893+00:00",
+  "lastUpdated": "2026-11-04T20:59:56.506123+00:00",
   "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
   "sources": {
     "happycow": {
@@ -9,7 +9,7 @@
     },
     "google": {
       "rating": 4.7,
-      "reviewCount": 264
+      "reviewCount": 266
     }
   },
   "featured": [
@@ -90,20 +90,6 @@
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUNGsZncDcXLbtjtv2ZfiTohAs_vNVdAU_BivMA5LERtw5z9Ldb=s128-c0x00000000-cc-rp-mo-ba3"
     },
     {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21VMGIySnNUM2RoTkRaRFNqRk1OV0ZFWDNvM09XYxAB",
-      "source": "Google",
-      "author": "Dominik Jersabeck",
-      "rating": 5,
-      "date": "2026-06-14",
-      "text": {
-        "en": "I dare you to find an item on the menu that's not absolutely delicious. This was the best dessert place I've visited in Japan. The mission of Soy Stories is to allow people with allergies and special diets to experience sweet treats and they tirelessly do exactly that. It was such a pleasure being able to get vegan desserts after a late dinner. Arigatou gozaimasu, Soy Stories – we will definitely come back!",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnwmv2qbkWelVxVLc0Wp2uO6SnWgJ1xw8c--a8aSUhIRTzj4Qm=s128-c0x00000000-cc-rp-mo-ba3"
-    },
-    {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21sa2RERmphMGRrY2xRNFVUVmljMUJ6U3pCSk1YYxAB",
       "source": "Google",
       "author": "Traveling Sky",
@@ -116,6 +102,20 @@
         "zh-tw": ""
       },
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9JURFRBO1r8jtShyKasFhZIpl18bdMbAref_FhkLuNnjYrMY=s128-c0x00000000-cc-rp-mo-ba6"
+    },
+    {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2pOWVgwRTNVMHBHVWxSRExVZ3RhR3BEWVhjeU5tYxAB",
+      "source": "Google",
+      "author": "Shannon Barkley-Nakajima",
+      "rating": 5,
+      "date": "2026-07-18",
+      "text": {
+        "en": "The owner was so lovely, knowledgeable and the ice cream and bubble waffle was exceptional. The best I’ve ever had. It tastes better than any dairy treats I’ve had all over the world. I highly recommend the black sesame waffle- you can see the black sesame seeds! The matcha ice cream is also so rich in flavour.  Very good pricing too. COME HERE 🫶🏻",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI4tyvc_h7IaensIM2upnZW7z-8BzGdMIkp3VD0pGMH6bdpgw=s128-c0x00000000-cc-rp-mo"
     }
   ]
 }
