@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T21:07:29.960118+00:00",
+  "lastUpdated": "2026-11-11T21:42:23.899274+00:00",
   "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
   "sources": {
     "happycow": {
@@ -90,6 +90,20 @@
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUNGsZncDcXLbtjtv2ZfiTohAs_vNVdAU_BivMA5LERtw5z9Ldb=s128-c0x00000000-cc-rp-mo-ba3"
     },
     {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT25GaGNrMVRkREo1ZEU4MGQxQkZOalF3WWpsbmJGRRAB",
+      "source": "Google",
+      "author": "Sarah Hernabbs",
+      "rating": 5,
+      "date": "2026-11-03",
+      "text": {
+        "en": "We had an amazing matcha and black sesame bubble waffle with soft serve! It tasted absolutely fabulous!! The staff was also super sweet and accommodating! We will definitely come back ❤️",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVfDnzTxlzFrzijmG7wPZ5Jd8JlEIY1ynEhJP7_2ldje-OQsecY=s128-c0x00000000-cc-rp-mo-ba4"
+    },
+    {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21sa2RERmphMGRrY2xRNFVUVmljMUJ6U3pCSk1YYxAB",
       "source": "Google",
       "author": "Traveling Sky",
@@ -102,20 +116,6 @@
         "zh-tw": ""
       },
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9JURFRBO1r8jtShyKasFhZIpl18bdMbAref_FhkLuNnjYrMY=s128-c0x00000000-cc-rp-mo-ba6"
-    },
-    {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2pOWVgwRTNVMHBHVWxSRExVZ3RhR3BEWVhjeU5tYxAB",
-      "source": "Google",
-      "author": "Shannon Barkley-Nakajima",
-      "rating": 5,
-      "date": "2026-07-18",
-      "text": {
-        "en": "The owner was so lovely, knowledgeable and the ice cream and bubble waffle was exceptional. The best I’ve ever had. It tastes better than any dairy treats I’ve had all over the world. I highly recommend the black sesame waffle- you can see the black sesame seeds! The matcha ice cream is also so rich in flavour.  Very good pricing too. COME HERE 🫶🏻",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI4tyvc_h7IaensIM2upnZW7z-8BzGdMIkp3VD0pGMH6bdpgw=s128-c0x00000000-cc-rp-mo"
     }
   ]
 }
