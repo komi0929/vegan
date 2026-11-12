@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11T21:42:23.899274+00:00",
+  "lastUpdated": "2026-11-12T21:39:51.816363+00:00",
   "googlePlaceId": "ChIJL8ZEXVgRVDURgePVwM_GJ6E",
   "sources": {
     "happycow": {
@@ -9,7 +9,7 @@
     },
     "google": {
       "rating": 4.7,
-      "reviewCount": 268
+      "reviewCount": 269
     }
   },
   "featured": [
@@ -46,6 +46,20 @@
       },
       "photoUrl": null,
       "reviewPhotoUrl": "img/donuts_title.webp"
+    },
+    {
+      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT2kxVldXUmhMWFYyU2w5TVRuSjBORk5xU2tsS2FuYxAB",
+      "source": "Google",
+      "author": "Levi Rego",
+      "rating": 5,
+      "date": "2026-11-04",
+      "text": {
+        "en": "Such a cute little shop! This is my 5th time coming here. All the desserts are gluten-free and vegan. Its served with some sauces and powders. My favorite combo is the kinako powder and the kuromitsu syrup.\nThe last time we came someone brought their puppy inside so I believe this shop is also pet friendly.\nThey have take out/  take home options as well which is super nice!\nThe girl running the shop is very knowledgeable about everything sold here and shes so sweet.\nいつもありがとうございます！",
+        "ko": "",
+        "zh-cn": "",
+        "zh-tw": ""
+      },
+      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW5JdSwU6Nz0vLMSLz4P43QzCNSW7-SFp2_ZDyYRE3DwDhlIy7euA=s128-c0x00000000-cc-rp-mo-ba4"
     },
     {
       "id": "g-Ci9DQUlRQUNvZENodHljRjlvT25OTFRsUTFaVlJ0YzNWa2FtODFRWEl4WXpoc1RVRRAB",
@@ -102,20 +116,6 @@
         "zh-tw": ""
       },
       "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVfDnzTxlzFrzijmG7wPZ5Jd8JlEIY1ynEhJP7_2ldje-OQsecY=s128-c0x00000000-cc-rp-mo-ba4"
-    },
-    {
-      "id": "g-Ci9DQUlRQUNvZENodHljRjlvT21sa2RERmphMGRrY2xRNFVUVmljMUJ6U3pCSk1YYxAB",
-      "source": "Google",
-      "author": "Traveling Sky",
-      "rating": 5,
-      "date": "2026-03-24",
-      "text": {
-        "en": "Excelent soft serve soy icecream with crispy waffle, ordered large with a coffee on the side to complement. This is not your typical western bland soy flavored ice-cream. This place takes it to another level.\nVery flavorful and delicious texture coupled with the crispy made to order waffle, I felt I was in heaven. Then to top it off they give you a tray of varies toppings to try.\n\nOrdered two donuts to go a strawberry 🍓 and mint flavor have not tried yet but will do latter with some green sencha tea.\n\nThe lady behind the counter did speak English,  she was a sweethart.\n\nDefinitely will come here again before I leave the area!",
-        "ko": "",
-        "zh-cn": "",
-        "zh-tw": ""
-      },
-      "photoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9JURFRBO1r8jtShyKasFhZIpl18bdMbAref_FhkLuNnjYrMY=s128-c0x00000000-cc-rp-mo-ba6"
     }
   ]
 }
